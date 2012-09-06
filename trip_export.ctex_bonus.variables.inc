@@ -56,6 +56,18 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
+  $variables['field_bundle_settings_node__forum_expat'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
   $variables['file_temporary_path'] = '/Applications/MAMP/tmp/php';
 
   $variables['filter_fallback_format'] = 'plain_text';
@@ -64,29 +76,39 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['menu_masks'] = array(
     0 => 501,
-    1 => 250,
-    2 => 125,
-    3 => 123,
-    4 => 121,
-    5 => 63,
-    6 => 62,
-    7 => 61,
-    8 => 60,
-    9 => 44,
-    10 => 31,
-    11 => 30,
-    12 => 25,
-    13 => 24,
-    14 => 21,
-    15 => 15,
-    16 => 14,
-    17 => 11,
-    18 => 7,
-    19 => 6,
-    20 => 5,
-    21 => 3,
-    22 => 2,
-    23 => 1,
+    1 => 493,
+    2 => 250,
+    3 => 247,
+    4 => 246,
+    5 => 245,
+    6 => 125,
+    7 => 123,
+    8 => 122,
+    9 => 121,
+    10 => 117,
+    11 => 63,
+    12 => 62,
+    13 => 61,
+    14 => 60,
+    15 => 59,
+    16 => 58,
+    17 => 44,
+    18 => 31,
+    19 => 30,
+    20 => 29,
+    21 => 25,
+    22 => 24,
+    23 => 21,
+    24 => 15,
+    25 => 14,
+    26 => 13,
+    27 => 11,
+    28 => 7,
+    29 => 6,
+    30 => 5,
+    31 => 3,
+    32 => 2,
+    33 => 1,
   );
 
   $variables['node_options_forum_expat'] = array(

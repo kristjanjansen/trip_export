@@ -22,7 +22,9 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'migrate',
     'migrate_d2d',
     'node',
+    'options',
     'system',
+    'taxonomy',
     'text',
     'toolbar',
     'trip_migrate',
@@ -52,6 +54,9 @@ function trip_export_drush_ctex_bonus_info_files() {
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.ctypes.inc' => array(
+      'overwrite' => TRUE,
+    ),
+    'trip_export.ctex_bonus.vocabularies.inc' => array(
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.filters.inc' => array(
