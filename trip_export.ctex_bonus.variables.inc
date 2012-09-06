@@ -12,11 +12,25 @@
 function trip_export_drush_ctex_bonus_variables() {
   $variables = array();
 
-  $variables['additional_settings__active_tab_forum_expat'] = 'edit-submission';
+  $variables['additional_settings__active_tab_forum_other'] = 'edit-submission';
 
   $variables['clean_url'] = TRUE;
 
-  $variables['cron_key'] = '5foLxopQAc6H1mXp8cwKUY3krqJIVav_fBg1a4FPKdc';
+  $variables['comment_anonymous_forum_other'] = 0;
+
+  $variables['comment_default_mode_forum_other'] = 1;
+
+  $variables['comment_default_per_page_forum_other'] = '50';
+
+  $variables['comment_form_location_forum_other'] = 1;
+
+  $variables['comment_forum_other'] = '2';
+
+  $variables['comment_preview_forum_other'] = '1';
+
+  $variables['comment_subject_field_forum_other'] = 1;
+
+  $variables['cron_key'] = 'UvPtKNTJyRwVAcXJrzMeG20udST6s6lAzWbP-ux0770';
 
   $variables['date_default_timezone'] = 'Europe/Tallinn';
 
@@ -24,7 +38,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['dev_timer'] = 1;
 
-  $variables['drupal_private_key'] = '95Mx9e4_8ZfjXD4k-5AevTu0cZaqK83pMkGdBL-LhW8';
+  $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
   $variables['file_temporary_path'] = '/Applications/MAMP/tmp/php';
 
@@ -36,37 +50,38 @@ function trip_export_drush_ctex_bonus_variables() {
     0 => 245,
     1 => 125,
     2 => 124,
-    3 => 122,
-    4 => 121,
-    5 => 63,
-    6 => 62,
-    7 => 61,
-    8 => 60,
-    9 => 44,
-    10 => 31,
-    11 => 30,
-    12 => 25,
-    13 => 24,
-    14 => 21,
-    15 => 15,
-    16 => 14,
-    17 => 11,
-    18 => 7,
-    19 => 6,
-    20 => 5,
-    21 => 3,
-    22 => 2,
-    23 => 1,
+    3 => 123,
+    4 => 122,
+    5 => 121,
+    6 => 63,
+    7 => 62,
+    8 => 61,
+    9 => 60,
+    10 => 44,
+    11 => 31,
+    12 => 30,
+    13 => 25,
+    14 => 24,
+    15 => 21,
+    16 => 15,
+    17 => 14,
+    18 => 11,
+    19 => 7,
+    20 => 6,
+    21 => 5,
+    22 => 3,
+    23 => 2,
+    24 => 1,
   );
 
-  $variables['node_options_forum_expat'] = array(
+  $variables['node_options_forum_other'] = array(
     0 => 'status',
     1 => 'promote',
   );
 
-  $variables['node_preview_forum_expat'] = '1';
+  $variables['node_preview_forum_other'] = '1';
 
-  $variables['node_submitted_forum_expat'] = 1;
+  $variables['node_submitted_forum_other'] = 1;
 
   $variables['site_default_country'] = '';
 

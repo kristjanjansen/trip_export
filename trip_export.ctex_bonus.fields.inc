@@ -12,34 +12,6 @@
 function trip_export_drush_ctex_bonus_fields() {
   $fields = array();
 
-  $fields['body'] = array(
-    'entity_types' => array(
-      0 => 'node',
-    ),
-    'translatable' => '0',
-    'settings' => array(),
-    'foreign keys' => array(
-      'format' => array(
-        'table' => 'filter_format',
-        'columns' => array(
-          'format' => 'format',
-        ),
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'field_name' => 'body',
-    'type' => 'text_with_summary',
-    'module' => 'text',
-    'active' => '1',
-    'locked' => '0',
-    'cardinality' => '1',
-    'deleted' => '0',
-  );
-
   $fields['comment_body'] = array(
     'entity_types' => array(
       0 => 'comment',
@@ -68,6 +40,34 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
+  $fields['body'] = array(
+    'entity_types' => array(
+      0 => 'node',
+    ),
+    'translatable' => '0',
+    'settings' => array(),
+    'foreign keys' => array(
+      'format' => array(
+        'table' => 'filter_format',
+        'columns' => array(
+          'format' => 'format',
+        ),
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'field_name' => 'body',
+    'type' => 'text_with_summary',
+    'module' => 'text',
+    'active' => '1',
+    'locked' => '0',
+    'cardinality' => '1',
+    'deleted' => '0',
+  );
+
   return $fields;
 }
 
@@ -77,7 +77,7 @@ function trip_export_drush_ctex_bonus_fields() {
 function trip_export_drush_ctex_bonus_instances() {
   $instances = array();
 
-  $instances['comment:comment_node_forum_expat:comment_body'] = array(
+  $instances['comment:comment_node_forum_other:comment_body'] = array(
     'label' => 'Comment',
     'settings' => array(
       'text_processing' => 1,
@@ -104,12 +104,12 @@ function trip_export_drush_ctex_bonus_instances() {
     'description' => '',
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
-    'bundle' => 'comment_node_forum_expat',
+    'bundle' => 'comment_node_forum_other',
     'deleted' => '0',
     'default_value' => NULL,
   );
 
-  $instances['node:forum_expat:body'] = array(
+  $instances['node:forum_other:body'] = array(
     'label' => 'Body',
     'widget' => array(
       'type' => 'text_textarea_with_summary',
@@ -145,11 +145,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
-    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
-    'bundle' => 'forum_expat',
+    'bundle' => 'forum_other',
     'deleted' => '0',
+    'default_value' => NULL,
   );
 
   return $instances;

@@ -14,9 +14,22 @@
 function trip_export_drush_ctex_bonus_info_dependencies() {
   return array(
     'block',
+    'bulk_export',
+    'comment',
+    'dblog',
+    'filter',
+    'migrate',
+    'migrate_d2d',
     'node',
+    'system',
     'text',
-    'views'
+    'toolbar',
+    'trip_migrate',
+    'trip_utils',
+    'user',
+    'views',
+    'views_json',
+    'views_litepager'
   );
 }
 
