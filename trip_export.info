@@ -8,6 +8,7 @@ dependencies[] = bulk_export
 dependencies[] = comment
 dependencies[] = dblog
 dependencies[] = filter
+dependencies[] = image
 dependencies[] = migrate
 dependencies[] = migrate_d2d
 dependencies[] = node

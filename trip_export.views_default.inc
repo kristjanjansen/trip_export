@@ -819,7 +819,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Field: Broken/missing handler */
+  /* Field: User: field_user_image */
   $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
   $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
   $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';
@@ -962,7 +962,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: User: field_user_image */
   $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
   $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
   $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';

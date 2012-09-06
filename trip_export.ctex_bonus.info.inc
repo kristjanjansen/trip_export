@@ -18,6 +18,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'comment',
     'dblog',
     'filter',
+    'image',
     'migrate',
     'migrate_d2d',
     'node',

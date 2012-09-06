@@ -12,6 +12,23 @@
 function trip_export_drush_ctex_bonus_ctypes() {
   $ctypes = array();
 
+  $ctypes['forum_expat'] = array(
+    'type' => 'forum_expat',
+    'name' => 'forum_expat',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'forum_expat',
+    'disabled_changed' => FALSE,
+  );
+
   $ctypes['forum_other'] = array(
     'type' => 'forum_other',
     'name' => 'forum_other',

@@ -12,21 +12,37 @@
 function trip_export_drush_ctex_bonus_variables() {
   $variables = array();
 
+  $variables['additional_settings__active_tab_forum_expat'] = 'edit-submission';
+
   $variables['additional_settings__active_tab_forum_other'] = 'edit-submission';
 
   $variables['clean_url'] = TRUE;
 
+  $variables['comment_anonymous_forum_expat'] = 0;
+
   $variables['comment_anonymous_forum_other'] = 0;
+
+  $variables['comment_default_mode_forum_expat'] = 1;
 
   $variables['comment_default_mode_forum_other'] = 1;
 
+  $variables['comment_default_per_page_forum_expat'] = '50';
+
   $variables['comment_default_per_page_forum_other'] = '50';
+
+  $variables['comment_form_location_forum_expat'] = 1;
 
   $variables['comment_form_location_forum_other'] = 1;
 
+  $variables['comment_forum_expat'] = '2';
+
   $variables['comment_forum_other'] = '2';
 
+  $variables['comment_preview_forum_expat'] = '1';
+
   $variables['comment_preview_forum_other'] = '1';
+
+  $variables['comment_subject_field_forum_expat'] = 1;
 
   $variables['comment_subject_field_forum_other'] = 1;
 
@@ -47,31 +63,35 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['menu_expanded'] = array();
 
   $variables['menu_masks'] = array(
-    0 => 245,
-    1 => 125,
-    2 => 124,
+    0 => 501,
+    1 => 250,
+    2 => 125,
     3 => 123,
-    4 => 122,
-    5 => 121,
-    6 => 63,
-    7 => 62,
-    8 => 61,
-    9 => 60,
-    10 => 44,
-    11 => 31,
-    12 => 30,
-    13 => 25,
-    14 => 24,
-    15 => 21,
-    16 => 15,
-    17 => 14,
-    18 => 11,
-    19 => 7,
-    20 => 6,
-    21 => 5,
-    22 => 3,
-    23 => 2,
-    24 => 1,
+    4 => 121,
+    5 => 63,
+    6 => 62,
+    7 => 61,
+    8 => 60,
+    9 => 44,
+    10 => 31,
+    11 => 30,
+    12 => 25,
+    13 => 24,
+    14 => 21,
+    15 => 15,
+    16 => 14,
+    17 => 11,
+    18 => 7,
+    19 => 6,
+    20 => 5,
+    21 => 3,
+    22 => 2,
+    23 => 1,
+  );
+
+  $variables['node_options_forum_expat'] = array(
+    0 => 'status',
+    1 => 'promote',
   );
 
   $variables['node_options_forum_other'] = array(
@@ -79,7 +99,11 @@ function trip_export_drush_ctex_bonus_variables() {
     1 => 'promote',
   );
 
+  $variables['node_preview_forum_expat'] = '1';
+
   $variables['node_preview_forum_other'] = '1';
+
+  $variables['node_submitted_forum_expat'] = 1;
 
   $variables['node_submitted_forum_other'] = 1;
 
@@ -90,6 +114,24 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['site_name'] = 'Site-Install';
 
   $variables['theme_default'] = 'island';
+
+  $variables['theme_island_settings'] = array(
+    'toggle_logo' => 0,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+  );
 
   $variables['update_notify_emails'] = array(
     0 => 'admin@example.com',
