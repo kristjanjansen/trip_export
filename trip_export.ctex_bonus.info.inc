@@ -14,25 +14,13 @@
 function trip_export_drush_ctex_bonus_info_dependencies() {
   return array(
     'block',
-    'bulk_export',
-    'comment',
-    'dblog',
-    'filter',
     'image',
-    'migrate',
-    'migrate_d2d',
+    'menu',
     'node',
     'options',
-    'system',
     'taxonomy',
     'text',
-    'toolbar',
-    'trip_migrate',
-    'trip_utils',
-    'user',
-    'views',
-    'views_json',
-    'views_litepager'
+    'views'
   );
 }
 
@@ -66,6 +54,9 @@ function trip_export_drush_ctex_bonus_info_files() {
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.fields.inc' => array(
+      'overwrite' => TRUE,
+    ),
+    'trip_export.ctex_bonus.menus.inc' => array(
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.blocks.inc' => array(

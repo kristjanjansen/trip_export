@@ -136,7 +136,7 @@ function trip_export_drush_ctex_bonus_fields() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'destination',
+          'vocabulary' => 'topic',
           'parent' => '0',
         ),
       ),
@@ -169,7 +169,7 @@ function trip_export_drush_ctex_bonus_fields() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'destination',
+          'vocabulary' => 'style',
           'parent' => '0',
         ),
       ),
@@ -205,7 +205,7 @@ function trip_export_drush_ctex_bonus_fields() {
 function trip_export_drush_ctex_bonus_instances() {
   $instances = array();
 
-  $instances['comment:comment_node_forum_expat:comment_body'] = array(
+  $instances['comment:comment_node_forum:comment_body'] = array(
     'label' => 'Comment',
     'settings' => array(
       'text_processing' => 1,
@@ -232,9 +232,41 @@ function trip_export_drush_ctex_bonus_instances() {
     'description' => '',
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
-    'bundle' => 'comment_node_forum_expat',
+    'bundle' => 'comment_node_forum',
     'deleted' => '0',
     'default_value' => NULL,
+  );
+
+  $instances['comment:comment_node_forum_expat:comment_body'] = array(
+    'label' => 'Comment',
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'required' => TRUE,
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'type' => 'text_default',
+        'weight' => 0,
+        'settings' => array(),
+        'module' => 'text',
+      ),
+    ),
+    'widget' => array(
+      'type' => 'text_textarea',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'weight' => 0,
+      'module' => 'text',
+    ),
+    'description' => '',
+    'default_value' => NULL,
+    'field_name' => 'comment_body',
+    'entity_type' => 'comment',
+    'bundle' => 'comment_node_forum_expat',
+    'deleted' => '0',
   );
 
   $instances['comment:comment_node_forum_other:comment_body'] = array(
@@ -266,6 +298,156 @@ function trip_export_drush_ctex_bonus_instances() {
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_forum_other',
+    'deleted' => '0',
+  );
+
+  $instances['node:forum:body'] = array(
+    'label' => 'Body',
+    'widget' => array(
+      'type' => 'text_textarea_with_summary',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'weight' => '-4',
+      'module' => 'text',
+    ),
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'type' => 'text_default',
+        'settings' => array(),
+        'module' => 'text',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'type' => 'text_summary_or_trimmed',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'module' => 'text',
+        'weight' => 0,
+      ),
+    ),
+    'required' => FALSE,
+    'description' => '',
+    'field_name' => 'body',
+    'entity_type' => 'node',
+    'bundle' => 'forum',
+    'deleted' => '0',
+    'default_value' => NULL,
+  );
+
+  $instances['node:forum:field_destination'] = array(
+    'label' => 'destination',
+    'widget' => array(
+      'type' => 'options_select',
+      'weight' => '-2',
+      'settings' => array(),
+      'module' => 'options',
+    ),
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'module' => 'taxonomy',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => FALSE,
+    'description' => '',
+    'field_name' => 'field_destination',
+    'entity_type' => 'node',
+    'bundle' => 'forum',
+    'deleted' => '0',
+    'default_value' => NULL,
+  );
+
+  $instances['node:forum:field_topic'] = array(
+    'label' => 'topic',
+    'widget' => array(
+      'weight' => '0',
+      'type' => 'options_select',
+      'module' => 'options',
+      'active' => 1,
+      'settings' => array(),
+    ),
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'module' => 'taxonomy',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => 0,
+    'description' => '',
+    'default_value' => NULL,
+    'field_name' => 'field_topic',
+    'entity_type' => 'node',
+    'bundle' => 'forum',
+    'deleted' => '0',
+  );
+
+  $instances['node:forum:field_style'] = array(
+    'label' => 'style',
+    'widget' => array(
+      'weight' => '2',
+      'type' => 'options_select',
+      'module' => 'options',
+      'active' => 1,
+      'settings' => array(),
+    ),
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'module' => 'taxonomy',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => 0,
+    'description' => '',
+    'default_value' => NULL,
+    'field_name' => 'field_style',
+    'entity_type' => 'node',
+    'bundle' => 'forum',
     'deleted' => '0',
   );
 
@@ -305,11 +487,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'forum_expat',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:forum_expat:field_destination'] = array(
@@ -499,11 +681,11 @@ function trip_export_drush_ctex_bonus_instances() {
     'required' => FALSE,
     'label' => 'field_user_image',
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'field_user_image',
     'entity_type' => 'user',
     'bundle' => 'user',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   return $instances;

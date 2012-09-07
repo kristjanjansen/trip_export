@@ -12,35 +12,51 @@
 function trip_export_drush_ctex_bonus_variables() {
   $variables = array();
 
+  $variables['additional_settings__active_tab_forum'] = 'edit-submission';
+
   $variables['additional_settings__active_tab_forum_expat'] = 'edit-submission';
 
   $variables['additional_settings__active_tab_forum_other'] = 'edit-submission';
 
   $variables['clean_url'] = TRUE;
 
+  $variables['comment_anonymous_forum'] = 0;
+
   $variables['comment_anonymous_forum_expat'] = 0;
 
   $variables['comment_anonymous_forum_other'] = 0;
+
+  $variables['comment_default_mode_forum'] = 1;
 
   $variables['comment_default_mode_forum_expat'] = 1;
 
   $variables['comment_default_mode_forum_other'] = 1;
 
+  $variables['comment_default_per_page_forum'] = '50';
+
   $variables['comment_default_per_page_forum_expat'] = '50';
 
   $variables['comment_default_per_page_forum_other'] = '50';
+
+  $variables['comment_form_location_forum'] = 1;
 
   $variables['comment_form_location_forum_expat'] = 1;
 
   $variables['comment_form_location_forum_other'] = 1;
 
+  $variables['comment_forum'] = '2';
+
   $variables['comment_forum_expat'] = '2';
 
   $variables['comment_forum_other'] = '2';
 
+  $variables['comment_preview_forum'] = '1';
+
   $variables['comment_preview_forum_expat'] = '1';
 
   $variables['comment_preview_forum_other'] = '1';
+
+  $variables['comment_subject_field_forum'] = 1;
 
   $variables['comment_subject_field_forum_expat'] = 1;
 
@@ -54,7 +70,21 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['dev_timer'] = 1;
 
+  $variables['drupal_http_request_fails'] = FALSE;
+
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
+
+  $variables['field_bundle_settings_node__forum'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
 
   $variables['field_bundle_settings_node__forum_expat'] = array(
     'view_modes' => array(),
@@ -82,33 +112,45 @@ function trip_export_drush_ctex_bonus_variables() {
     4 => 246,
     5 => 245,
     6 => 125,
-    7 => 123,
-    8 => 122,
-    9 => 121,
-    10 => 117,
-    11 => 63,
-    12 => 62,
-    13 => 61,
-    14 => 60,
-    15 => 59,
-    16 => 58,
-    17 => 44,
-    18 => 31,
-    19 => 30,
-    20 => 29,
-    21 => 25,
-    22 => 24,
-    23 => 21,
-    24 => 15,
-    25 => 14,
-    26 => 13,
-    27 => 11,
-    28 => 7,
-    29 => 6,
-    30 => 5,
-    31 => 3,
-    32 => 2,
-    33 => 1,
+    7 => 124,
+    8 => 123,
+    9 => 122,
+    10 => 121,
+    11 => 117,
+    12 => 63,
+    13 => 62,
+    14 => 61,
+    15 => 60,
+    16 => 59,
+    17 => 58,
+    18 => 44,
+    19 => 31,
+    20 => 30,
+    21 => 29,
+    22 => 25,
+    23 => 24,
+    24 => 21,
+    25 => 15,
+    26 => 14,
+    27 => 13,
+    28 => 11,
+    29 => 7,
+    30 => 6,
+    31 => 5,
+    32 => 3,
+    33 => 2,
+    34 => 1,
+  );
+
+  $variables['menu_options_forum'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_parent_forum'] = 'main-menu:0';
+
+  $variables['node_options_forum'] = array(
+    0 => 'status',
+    1 => 'promote',
   );
 
   $variables['node_options_forum_expat'] = array(
@@ -121,13 +163,19 @@ function trip_export_drush_ctex_bonus_variables() {
     1 => 'promote',
   );
 
+  $variables['node_preview_forum'] = '1';
+
   $variables['node_preview_forum_expat'] = '1';
 
   $variables['node_preview_forum_other'] = '1';
 
+  $variables['node_submitted_forum'] = 1;
+
   $variables['node_submitted_forum_expat'] = 1;
 
   $variables['node_submitted_forum_other'] = 1;
+
+  $variables['save_continue_forum'] = 'Save and add fields';
 
   $variables['site_default_country'] = '';
 
@@ -160,6 +208,10 @@ function trip_export_drush_ctex_bonus_variables() {
   );
 
   $variables['user_register'] = 2;
+
+  $variables['views_defaults'] = array(
+    'trip_test' => TRUE,
+  );
 
   return $variables;
 }

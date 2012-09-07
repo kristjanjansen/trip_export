@@ -263,6 +263,234 @@ function trip_export_views_default_views() {
   $views['comments_recent'] = $view;
 
   $view = new view();
+  $view->name = 'forum';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'forum';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Test';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'lite';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '35';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_user_image' => 'field_user_image',
+    'title' => 'title',
+    'name' => 'title',
+    'comment_count' => 'comment_count',
+    'nothing' => 'nothing',
+    'field_tags' => 'field_tags',
+    'last_updated' => 'title',
+    'nid' => 'nid',
+    'term_node_tid' => 'title',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_user_image' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => ' ',
+      'empty_column' => 0,
+    ),
+    'name' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'comment_count' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nothing' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_tags' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'last_updated' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'nid' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'term_node_tid' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Field: User: field_user_image */
+  $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
+  $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
+  $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';
+  $handler->display->display_options['fields']['field_user_image']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_user_image']['label'] = '';
+  $handler->display->display_options['fields']['field_user_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_user_image']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  /* Field: Content: Comment count */
+  $handler->display->display_options['fields']['comment_count']['id'] = 'comment_count';
+  $handler->display->display_options['fields']['comment_count']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['fields']['comment_count']['field'] = 'comment_count';
+  $handler->display->display_options['fields']['comment_count']['label'] = '';
+  $handler->display->display_options['fields']['comment_count']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['comment_count']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['comment_count']['empty_zero'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Updated/commented date */
+  $handler->display->display_options['fields']['last_updated']['id'] = 'last_updated';
+  $handler->display->display_options['fields']['last_updated']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['fields']['last_updated']['field'] = 'last_updated';
+  $handler->display->display_options['fields']['last_updated']['label'] = '';
+  $handler->display->display_options['fields']['last_updated']['element_label_colon'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: All taxonomy terms */
+  $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['fields']['term_node_tid']['label'] = '';
+  $handler->display->display_options['fields']['term_node_tid']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Trip last comment date */
+  $handler->display->display_options['sorts']['trip_last_comment']['id'] = 'trip_last_comment';
+  $handler->display->display_options['sorts']['trip_last_comment']['table'] = 'node';
+  $handler->display->display_options['sorts']['trip_last_comment']['field'] = 'trip_last_comment';
+  $handler->display->display_options['sorts']['trip_last_comment']['order'] = 'DESC';
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
+  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
+  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['path'] = 'forum';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Forum';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'views_json';
+  $handler->display->display_options['style_options']['plaintext_output'] = 1;
+  $handler->display->display_options['style_options']['jsonp_prefix'] = '';
+  $handler->display->display_options['style_options']['using_views_api_mode'] = 0;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: New comments */
+  $handler->display->display_options['fields']['new_comments']['id'] = 'new_comments';
+  $handler->display->display_options['fields']['new_comments']['table'] = 'node';
+  $handler->display->display_options['fields']['new_comments']['field'] = 'new_comments';
+  $handler->display->display_options['fields']['new_comments']['label'] = '';
+  $handler->display->display_options['fields']['new_comments']['element_label_colon'] = FALSE;
+  $handler->display->display_options['path'] = 'json';
+  $views['forum'] = $view;
+
+  $view = new view();
   $view->name = 'frontpage';
   $view->description = 'Emulates the default Drupal front page; you may set the default home page path to this view to make it your front page.';
   $view->tag = 'default';
@@ -719,217 +947,6 @@ function trip_export_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'images';
   $views['trip_images'] = $view;
-
-  $view = new view();
-  $view->name = 'trip_test';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'trip_test';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Test';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['query_comment'] = FALSE;
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'lite';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '35';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'field_user_image' => 'field_user_image',
-    'title' => 'title',
-    'name' => 'title',
-    'comment_count' => 'comment_count',
-    'nothing' => 'nothing',
-    'field_tags' => 'field_tags',
-    'last_updated' => 'title',
-    'nid' => 'nid',
-    'term_node_tid' => 'title',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_user_image' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => ' ',
-      'empty_column' => 0,
-    ),
-    'name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'comment_count' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'nothing' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_tags' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'last_updated' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'nid' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'term_node_tid' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
-  /* Relationship: Content: Author */
-  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
-  $handler->display->display_options['relationships']['uid']['table'] = 'node';
-  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Field: User: field_user_image */
-  $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
-  $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
-  $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';
-  $handler->display->display_options['fields']['field_user_image']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['field_user_image']['label'] = '';
-  $handler->display->display_options['fields']['field_user_image']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: User: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  /* Field: Content: Comment count */
-  $handler->display->display_options['fields']['comment_count']['id'] = 'comment_count';
-  $handler->display->display_options['fields']['comment_count']['table'] = 'node_comment_statistics';
-  $handler->display->display_options['fields']['comment_count']['field'] = 'comment_count';
-  $handler->display->display_options['fields']['comment_count']['label'] = '';
-  $handler->display->display_options['fields']['comment_count']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['comment_count']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['comment_count']['empty_zero'] = TRUE;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_tags']['id'] = 'field_tags';
-  $handler->display->display_options['fields']['field_tags']['table'] = 'field_data_field_tags';
-  $handler->display->display_options['fields']['field_tags']['field'] = 'field_tags';
-  $handler->display->display_options['fields']['field_tags']['label'] = '';
-  $handler->display->display_options['fields']['field_tags']['element_label_colon'] = FALSE;
-  /* Field: Content: Updated/commented date */
-  $handler->display->display_options['fields']['last_updated']['id'] = 'last_updated';
-  $handler->display->display_options['fields']['last_updated']['table'] = 'node_comment_statistics';
-  $handler->display->display_options['fields']['last_updated']['field'] = 'last_updated';
-  $handler->display->display_options['fields']['last_updated']['label'] = '';
-  $handler->display->display_options['fields']['last_updated']['element_label_colon'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Content: All taxonomy terms */
-  $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
-  $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
-  $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
-  $handler->display->display_options['fields']['term_node_tid']['label'] = '';
-  $handler->display->display_options['fields']['term_node_tid']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Trip last comment date */
-  $handler->display->display_options['sorts']['trip_last_comment']['id'] = 'trip_last_comment';
-  $handler->display->display_options['sorts']['trip_last_comment']['table'] = 'node';
-  $handler->display->display_options['sorts']['trip_last_comment']['field'] = 'trip_last_comment';
-  $handler->display->display_options['sorts']['trip_last_comment']['order'] = 'DESC';
-  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
-  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'test';
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'views_json';
-  $handler->display->display_options['style_options']['plaintext_output'] = 1;
-  $handler->display->display_options['style_options']['jsonp_prefix'] = '';
-  $handler->display->display_options['style_options']['using_views_api_mode'] = 0;
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
-  $handler->display->display_options['fields']['nid']['id'] = 'nid';
-  $handler->display->display_options['fields']['nid']['table'] = 'node';
-  $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  $handler->display->display_options['fields']['nid']['label'] = '';
-  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Content: New comments */
-  $handler->display->display_options['fields']['new_comments']['id'] = 'new_comments';
-  $handler->display->display_options['fields']['new_comments']['table'] = 'node';
-  $handler->display->display_options['fields']['new_comments']['field'] = 'new_comments';
-  $handler->display->display_options['fields']['new_comments']['label'] = '';
-  $handler->display->display_options['fields']['new_comments']['element_label_colon'] = FALSE;
-  $handler->display->display_options['path'] = 'json';
-  $views['trip_test'] = $view;
 
   $view = new view();
   $view->name = 'trip_users';
