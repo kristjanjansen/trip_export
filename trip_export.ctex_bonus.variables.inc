@@ -30,6 +30,18 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['additional_settings__active_tab_travel_buysell'] = 'edit-submission';
 
+  $variables['cache_actions_get_cache_bins'] = array(
+    'cache' => 'cache',
+    'cache_block' => 'cache_block',
+    'cache_filter' => 'cache_filter',
+    'cache_page' => 'cache_page',
+    'cache_field' => 'cache_field',
+    'cache_image' => 'cache_image',
+    'cache_views' => 'cache_views',
+    'cache_views_data' => 'cache_views_data',
+    'cache_rules' => 'cache_rules',
+  );
+
   $variables['clean_url'] = TRUE;
 
   $variables['comment_anonymous_blog'] = 0;
@@ -244,7 +256,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 3;
+  $variables['language_count'] = 4;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',

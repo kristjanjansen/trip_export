@@ -26,7 +26,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['title'] = 'Forum';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'rules';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -169,6 +169,15 @@ function trip_export_views_default_views() {
   $handler->display->display_options['sorts']['trip_last_comment']['table'] = 'node';
   $handler->display->display_options['sorts']['trip_last_comment']['field'] = 'trip_last_comment';
   $handler->display->display_options['sorts']['trip_last_comment']['order'] = 'DESC';
+  /* Contextual filter: Content: Type */
+  $handler->display->display_options['arguments']['type']['id'] = 'type';
+  $handler->display->display_options['arguments']['type']['table'] = 'node';
+  $handler->display->display_options['arguments']['type']['field'] = 'type';
+  $handler->display->display_options['arguments']['type']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['type']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['type']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['type']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['type']['limit'] = '0';
   /* Contextual filter: Content: Has taxonomy term ID (with depth) */
   $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
@@ -182,35 +191,11 @@ function trip_export_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'all' => 'all',
-    'blog' => 'blog',
-    'forum' => 'forum',
-    'forum_buysell' => 'forum_buysell',
-    'forum_expat' => 'forum_expat',
-    'forum_other' => 'forum_other',
-    'forum_travelmate' => 'forum_travelmate',
-    'image' => 'image',
-    'news' => 'news',
-  );
-  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'forum';
+  $handler->display->display_options['path'] = 'forum/%';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
@@ -236,7 +221,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['fields']['new_comments']['field'] = 'new_comments';
   $handler->display->display_options['fields']['new_comments']['label'] = '';
   $handler->display->display_options['fields']['new_comments']['element_label_colon'] = FALSE;
-  $handler->display->display_options['path'] = 'json';
+  $handler->display->display_options['path'] = 'forum/%/json';
   $translatables['forums'] = array(
     t('Master'),
     t('Forum'),
@@ -257,7 +242,6 @@ function trip_export_views_default_views() {
     t('.'),
     t(','),
     t('All'),
-    t('Type'),
     t('Page'),
   );
   $views['forums'] = $view;
