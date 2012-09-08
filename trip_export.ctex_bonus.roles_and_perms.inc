@@ -17,6 +17,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'weight' => '0',
     'permissions' => array(
       'access content' => TRUE,
+      'use text format filtered_html' => TRUE,
     ),
   );
 
@@ -25,6 +26,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'weight' => '1',
     'permissions' => array(
       'access content' => TRUE,
+      'use text format filtered_html' => TRUE,
     ),
   );
 

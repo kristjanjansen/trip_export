@@ -12,55 +12,137 @@
 function trip_export_drush_ctex_bonus_variables() {
   $variables = array();
 
+  $variables['additional_settings__active_tab_blog'] = 'edit-submission';
+
   $variables['additional_settings__active_tab_forum'] = 'edit-submission';
+
+  $variables['additional_settings__active_tab_forum_buysell'] = 'edit-submission';
 
   $variables['additional_settings__active_tab_forum_expat'] = 'edit-submission';
 
   $variables['additional_settings__active_tab_forum_other'] = 'edit-submission';
 
+  $variables['additional_settings__active_tab_forum_travelmate'] = 'edit-submission';
+
+  $variables['additional_settings__active_tab_image'] = 'edit-submission';
+
+  $variables['additional_settings__active_tab_news'] = 'edit-submission';
+
+  $variables['additional_settings__active_tab_travel_buysell'] = 'edit-submission';
+
   $variables['clean_url'] = TRUE;
 
+  $variables['comment_anonymous_blog'] = 0;
+
   $variables['comment_anonymous_forum'] = 0;
+
+  $variables['comment_anonymous_forum_buysell'] = 0;
 
   $variables['comment_anonymous_forum_expat'] = 0;
 
   $variables['comment_anonymous_forum_other'] = 0;
 
+  $variables['comment_anonymous_forum_travelmate'] = 0;
+
+  $variables['comment_anonymous_image'] = 0;
+
+  $variables['comment_anonymous_news'] = 0;
+
+  $variables['comment_blog'] = '2';
+
+  $variables['comment_default_mode_blog'] = 1;
+
   $variables['comment_default_mode_forum'] = 1;
+
+  $variables['comment_default_mode_forum_buysell'] = 1;
 
   $variables['comment_default_mode_forum_expat'] = 1;
 
   $variables['comment_default_mode_forum_other'] = 1;
 
+  $variables['comment_default_mode_forum_travelmate'] = 1;
+
+  $variables['comment_default_mode_image'] = 1;
+
+  $variables['comment_default_mode_news'] = 1;
+
+  $variables['comment_default_per_page_blog'] = '50';
+
   $variables['comment_default_per_page_forum'] = '50';
+
+  $variables['comment_default_per_page_forum_buysell'] = '50';
 
   $variables['comment_default_per_page_forum_expat'] = '50';
 
   $variables['comment_default_per_page_forum_other'] = '50';
 
+  $variables['comment_default_per_page_forum_travelmate'] = '50';
+
+  $variables['comment_default_per_page_image'] = '50';
+
+  $variables['comment_default_per_page_news'] = '50';
+
+  $variables['comment_form_location_blog'] = 1;
+
   $variables['comment_form_location_forum'] = 1;
+
+  $variables['comment_form_location_forum_buysell'] = 1;
 
   $variables['comment_form_location_forum_expat'] = 1;
 
   $variables['comment_form_location_forum_other'] = 1;
 
+  $variables['comment_form_location_forum_travelmate'] = 1;
+
+  $variables['comment_form_location_image'] = 1;
+
+  $variables['comment_form_location_news'] = 1;
+
   $variables['comment_forum'] = '2';
+
+  $variables['comment_forum_buysell'] = '2';
 
   $variables['comment_forum_expat'] = '2';
 
   $variables['comment_forum_other'] = '2';
 
+  $variables['comment_forum_travelmate'] = '2';
+
+  $variables['comment_image'] = '2';
+
+  $variables['comment_news'] = '2';
+
+  $variables['comment_preview_blog'] = '1';
+
   $variables['comment_preview_forum'] = '1';
+
+  $variables['comment_preview_forum_buysell'] = '1';
 
   $variables['comment_preview_forum_expat'] = '1';
 
   $variables['comment_preview_forum_other'] = '1';
 
+  $variables['comment_preview_forum_travelmate'] = '1';
+
+  $variables['comment_preview_image'] = '1';
+
+  $variables['comment_preview_news'] = '1';
+
+  $variables['comment_subject_field_blog'] = 1;
+
   $variables['comment_subject_field_forum'] = 1;
+
+  $variables['comment_subject_field_forum_buysell'] = 1;
 
   $variables['comment_subject_field_forum_expat'] = 1;
 
   $variables['comment_subject_field_forum_other'] = 1;
+
+  $variables['comment_subject_field_forum_travelmate'] = 1;
+
+  $variables['comment_subject_field_image'] = 1;
+
+  $variables['comment_subject_field_news'] = 1;
 
   $variables['cron_key'] = 'UvPtKNTJyRwVAcXJrzMeG20udST6s6lAzWbP-ux0770';
 
@@ -74,6 +156,18 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
+  $variables['field_bundle_settings_node__blog'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
   $variables['field_bundle_settings_node__forum'] = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -86,7 +180,55 @@ function trip_export_drush_ctex_bonus_variables() {
     ),
   );
 
+  $variables['field_bundle_settings_node__forum_buysell'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
   $variables['field_bundle_settings_node__forum_expat'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
+  $variables['field_bundle_settings_node__forum_travelmate'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
+  $variables['field_bundle_settings_node__image'] = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+
+  $variables['field_bundle_settings_node__news'] = array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
@@ -127,7 +269,7 @@ function trip_export_drush_ctex_bonus_variables() {
     19 => 31,
     20 => 30,
     21 => 29,
-    22 => 25,
+    22 => 27,
     23 => 24,
     24 => 21,
     25 => 15,
@@ -142,13 +284,59 @@ function trip_export_drush_ctex_bonus_variables() {
     34 => 1,
   );
 
+  $variables['menu_options_blog'] = array(
+    0 => 'main-menu',
+  );
+
   $variables['menu_options_forum'] = array(
     0 => 'main-menu',
   );
 
+  $variables['menu_options_forum_buysell'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_options_forum_travelmate'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_options_image'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_options_news'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_options_travel_buysell'] = array(
+    0 => 'main-menu',
+  );
+
+  $variables['menu_parent_blog'] = 'main-menu:0';
+
   $variables['menu_parent_forum'] = 'main-menu:0';
 
+  $variables['menu_parent_forum_buysell'] = 'main-menu:0';
+
+  $variables['menu_parent_forum_travelmate'] = 'main-menu:0';
+
+  $variables['menu_parent_image'] = 'main-menu:0';
+
+  $variables['menu_parent_news'] = 'main-menu:0';
+
+  $variables['menu_parent_travel_buysell'] = 'main-menu:0';
+
+  $variables['node_options_blog'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
   $variables['node_options_forum'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
+  $variables['node_options_forum_buysell'] = array(
     0 => 'status',
     1 => 'promote',
   );
@@ -163,19 +351,71 @@ function trip_export_drush_ctex_bonus_variables() {
     1 => 'promote',
   );
 
+  $variables['node_options_forum_travelmate'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
+  $variables['node_options_image'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
+  $variables['node_options_news'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
+  $variables['node_options_travel_buysell'] = array(
+    0 => 'status',
+    1 => 'promote',
+  );
+
+  $variables['node_preview_blog'] = '1';
+
   $variables['node_preview_forum'] = '1';
+
+  $variables['node_preview_forum_buysell'] = '1';
 
   $variables['node_preview_forum_expat'] = '1';
 
   $variables['node_preview_forum_other'] = '1';
 
+  $variables['node_preview_forum_travelmate'] = '1';
+
+  $variables['node_preview_image'] = '1';
+
+  $variables['node_preview_news'] = '1';
+
+  $variables['node_submitted_blog'] = 1;
+
   $variables['node_submitted_forum'] = 1;
+
+  $variables['node_submitted_forum_buysell'] = 1;
 
   $variables['node_submitted_forum_expat'] = 1;
 
   $variables['node_submitted_forum_other'] = 1;
 
+  $variables['node_submitted_forum_travelmate'] = 1;
+
+  $variables['node_submitted_image'] = 1;
+
+  $variables['node_submitted_news'] = 1;
+
+  $variables['node_submitted_travel_buysell'] = 1;
+
+  $variables['save_continue_blog'] = 'Save and add fields';
+
   $variables['save_continue_forum'] = 'Save and add fields';
+
+  $variables['save_continue_forum_buysell'] = 'Save and add fields';
+
+  $variables['save_continue_forum_travelmate'] = 'Save and add fields';
+
+  $variables['save_continue_news'] = 'Save and add fields';
+
+  $variables['save_continue_travel_buysell'] = 'Save and add fields';
 
   $variables['site_default_country'] = '';
 
@@ -211,6 +451,15 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['views_defaults'] = array(
     'trip_test' => TRUE,
+    'trip_images' => TRUE,
+    'trip_users' => TRUE,
+    'frontpage' => TRUE,
+    'glossary' => TRUE,
+    'archive' => TRUE,
+    'backlinks' => TRUE,
+    'comments_recent' => TRUE,
+    'taxonomy_term' => TRUE,
+    'tracker' => TRUE,
   );
 
   return $variables;

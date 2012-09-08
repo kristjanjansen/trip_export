@@ -22,8 +22,9 @@ function trip_export_image_default_styles() {
 
   // Exported image style: thumbnail.
   $styles['thumbnail'] = array(
+    'name' => 'thumbnail',
     'effects' => array(
-      0 => array(
+      2 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -37,10 +38,9 @@ function trip_export_image_default_styles() {
           'height' => 100,
           'upscale' => 1,
         ),
-        'weight' => 0,
+        'weight' => '0',
       ),
     ),
-    'name' => 'thumbnail',
   );
 
   // Exported image style: medium.
@@ -87,6 +87,50 @@ function trip_export_image_default_styles() {
       ),
     ),
     'name' => 'large',
+  );
+
+  // Exported image style: image_small.
+  $styles['image_small'] = array(
+    'name' => 'image_small',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '145',
+          'height' => '145',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: user_small.
+  $styles['user_small'] = array(
+    'name' => 'user_small',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '48',
+          'height' => '48',
+        ),
+        'weight' => '1',
+      ),
+    ),
   );
 
   return $styles;

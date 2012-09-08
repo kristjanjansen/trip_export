@@ -12,6 +12,23 @@
 function trip_export_drush_ctex_bonus_ctypes() {
   $ctypes = array();
 
+  $ctypes['blog'] = array(
+    'type' => 'blog',
+    'name' => 'blog',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'blog',
+    'disabled_changed' => FALSE,
+  );
+
   $ctypes['forum'] = array(
     'type' => 'forum',
     'name' => 'forum',
@@ -26,6 +43,23 @@ function trip_export_drush_ctex_bonus_ctypes() {
     'locked' => '0',
     'disabled' => '0',
     'orig_type' => 'forum',
+    'disabled_changed' => FALSE,
+  );
+
+  $ctypes['forum_buysell'] = array(
+    'type' => 'forum_buysell',
+    'name' => 'forum_buysell',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'forum_buysell',
     'disabled_changed' => FALSE,
   );
 
@@ -60,6 +94,57 @@ function trip_export_drush_ctex_bonus_ctypes() {
     'locked' => '0',
     'disabled' => '0',
     'orig_type' => 'forum_other',
+    'disabled_changed' => FALSE,
+  );
+
+  $ctypes['forum_travelmate'] = array(
+    'type' => 'forum_travelmate',
+    'name' => 'forum_travelmate',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'forum_travelmate',
+    'disabled_changed' => FALSE,
+  );
+
+  $ctypes['image'] = array(
+    'type' => 'image',
+    'name' => 'image',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'image',
+    'disabled_changed' => FALSE,
+  );
+
+  $ctypes['news'] = array(
+    'type' => 'news',
+    'name' => 'news',
+    'base' => 'node_content',
+    'module' => 'node',
+    'description' => '',
+    'help' => '',
+    'has_title' => '1',
+    'title_label' => 'Title',
+    'custom' => '1',
+    'modified' => '1',
+    'locked' => '0',
+    'disabled' => '0',
+    'orig_type' => 'news',
     'disabled_changed' => FALSE,
   );
 
