@@ -26,6 +26,24 @@ function trip_export_drush_ctex_bonus_menus() {
         'external' => '0',
         'weight' => '0',
       ),
+      'users' => array(
+        'link_path' => 'users',
+        'router_path' => 'users',
+        'link_title' => 'Users',
+        'options' => 'a:0:{}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '2',
+      ),
+      'images' => array(
+        'link_path' => 'images',
+        'router_path' => 'images',
+        'link_title' => 'Images',
+        'options' => 'a:0:{}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '1',
+      ),
     ),
   );
 

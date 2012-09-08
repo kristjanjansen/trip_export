@@ -462,6 +462,7 @@ function trip_export_drush_ctex_bonus_variables() {
     'comments_recent' => TRUE,
     'taxonomy_term' => TRUE,
     'tracker' => TRUE,
+    'forum' => TRUE,
   );
 
   return $variables;
