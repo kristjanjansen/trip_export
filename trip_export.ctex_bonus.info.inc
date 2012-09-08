@@ -22,7 +22,8 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'node',
     'options',
     'taxonomy',
-    'text'
+    'text',
+    'views'
   );
 }
 
@@ -31,6 +32,12 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
  */
 function trip_export_drush_ctex_bonus_info_files() {
   return array(
+    'trip_export.views_default.inc' => array(
+      'overwrite' => TRUE,
+    ),
+    'trip_export.module' => array(
+      'overwrite' => TRUE,
+    ),
     'trip_export.info' => array(
       'overwrite' => TRUE,
     ),
@@ -59,9 +66,6 @@ function trip_export_drush_ctex_bonus_info_files() {
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.languages.inc' => array(
-      'overwrite' => TRUE,
-    ),
-    'trip_export.module' => array(
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.roles_and_perms.inc' => array(
