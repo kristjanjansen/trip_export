@@ -244,6 +244,56 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
+  $variables['language_count'] = 2;
+
+  $variables['language_default'] = (object) array(
+    'language' => 'et',
+    'name' => 'Estonian',
+    'native' => 'Eesti',
+    'direction' => '0',
+    'enabled' => 1,
+    'plurals' => '0',
+    'formula' => '',
+    'domain' => '',
+    'prefix' => 'et',
+    'weight' => '0',
+    'javascript' => '',
+  );
+
+  $variables['language_negotiation_language'] = array();
+
+  $variables['language_negotiation_language_content'] = array(
+    'locale-interface' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_interface',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+  );
+
+  $variables['language_negotiation_language_url'] = array(
+    'locale-url' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_url',
+        'switcher' => 'locale_language_switcher_url',
+        'url_rewrite' => 'locale_language_url_rewrite_url',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+    'locale-url-fallback' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_url_fallback',
+      ),
+      'file' => 'includes/locale.inc',
+    ),
+  );
+
+  $variables['language_types'] = array(
+    'language' => TRUE,
+    'language_content' => FALSE,
+    'language_url' => FALSE,
+  );
+
   $variables['menu_expanded'] = array();
 
   $variables['menu_masks'] = array(
@@ -462,7 +512,7 @@ function trip_export_drush_ctex_bonus_variables() {
     'comments_recent' => TRUE,
     'taxonomy_term' => TRUE,
     'tracker' => TRUE,
-    'forum' => TRUE,
+    'forum' => FALSE,
   );
 
   return $variables;

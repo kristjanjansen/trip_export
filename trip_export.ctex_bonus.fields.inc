@@ -287,11 +287,11 @@ function trip_export_drush_ctex_bonus_instances() {
       'module' => 'text',
     ),
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_blog',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['comment:comment_node_forum:comment_body'] = array(
@@ -351,11 +351,11 @@ function trip_export_drush_ctex_bonus_instances() {
       'module' => 'text',
     ),
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_forum_buysell',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['comment:comment_node_forum_expat:comment_body'] = array(
@@ -447,11 +447,11 @@ function trip_export_drush_ctex_bonus_instances() {
       'module' => 'text',
     ),
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_forum_travelmate',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['comment:comment_node_image:comment_body'] = array(
@@ -479,11 +479,11 @@ function trip_export_drush_ctex_bonus_instances() {
       'module' => 'text',
     ),
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_image',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['comment:comment_node_news:comment_body'] = array(
@@ -511,11 +511,11 @@ function trip_export_drush_ctex_bonus_instances() {
       'module' => 'text',
     ),
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'comment_body',
     'entity_type' => 'comment',
     'bundle' => 'comment_node_news',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:blog:body'] = array(
@@ -554,11 +554,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'blog',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:blog:field_destination'] = array(
@@ -783,11 +783,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'forum_buysell',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:forum_buysell:field_topic'] = array(
@@ -984,11 +984,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'forum_travelmate',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:forum_travelmate:field_destination'] = array(
@@ -1099,11 +1099,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'image',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:image:field_image_image'] = array(
@@ -1183,11 +1183,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'field_destination',
     'entity_type' => 'node',
     'bundle' => 'image',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:news:body'] = array(
@@ -1226,11 +1226,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'body',
     'entity_type' => 'node',
     'bundle' => 'news',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['node:news:field_destination'] = array(
@@ -1336,11 +1336,11 @@ function trip_export_drush_ctex_bonus_instances() {
     ),
     'required' => FALSE,
     'description' => '',
+    'default_value' => NULL,
     'field_name' => 'field_lyhiuudislink',
     'entity_type' => 'node',
     'bundle' => 'news',
     'deleted' => '0',
-    'default_value' => NULL,
   );
 
   $instances['user:user:field_user_image'] = array(

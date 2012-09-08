@@ -6,6 +6,7 @@ core = 7.x
 dependencies[] = block
 dependencies[] = filter
 dependencies[] = image
+dependencies[] = locale
 dependencies[] = menu
 dependencies[] = node
 dependencies[] = options

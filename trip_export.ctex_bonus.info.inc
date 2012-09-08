@@ -16,6 +16,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'block',
     'filter',
     'image',
+    'locale',
     'menu',
     'node',
     'options',
@@ -61,6 +62,9 @@ function trip_export_drush_ctex_bonus_info_files() {
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.blocks.inc' => array(
+      'overwrite' => TRUE,
+    ),
+    'trip_export.ctex_bonus.languages.inc' => array(
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.roles_and_perms.inc' => array(

@@ -231,6 +231,29 @@ function trip_export_views_default_views() {
   $handler->display->display_options['fields']['new_comments']['label'] = '';
   $handler->display->display_options['fields']['new_comments']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'json';
+  $translatables['forums'] = array(
+    t('Master'),
+    t('Test'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('author'),
+    t('.'),
+    t(','),
+    t('All'),
+    t('Type'),
+    t('Page'),
+  );
   $views['forums'] = $view;
 
   $view = new view();
@@ -316,6 +339,27 @@ function trip_export_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '1';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
+  $translatables['images'] = array(
+    t('Master'),
+    t('Images'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('.'),
+    t(','),
+    t('Published'),
+    t('Page'),
+  );
   $views['images'] = $view;
 
   $view = new view();
@@ -380,6 +424,25 @@ function trip_export_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '2';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
+  $translatables['users'] = array(
+    t('Master'),
+    t('trip_users'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('field_user_image'),
+    t('Page'),
+  );
   $views['users'] = $view;
 
   return $views;
