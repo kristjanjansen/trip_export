@@ -443,6 +443,8 @@ function trip_export_drush_ctex_bonus_variables() {
     'favicon_upload' => '',
   );
 
+  $variables['update_last_email_notification'] = 1347112949;
+
   $variables['update_notify_emails'] = array(
     0 => 'admin@example.com',
   );

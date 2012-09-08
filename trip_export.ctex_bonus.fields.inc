@@ -225,6 +225,34 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
+  $fields['field_lyhiuudislink'] = array(
+    'translatable' => '0',
+    'entity_types' => array(),
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'foreign keys' => array(
+      'format' => array(
+        'table' => 'filter_format',
+        'columns' => array(
+          'format' => 'format',
+        ),
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'field_name' => 'field_lyhiuudislink',
+    'type' => 'text',
+    'module' => 'text',
+    'active' => '1',
+    'locked' => '0',
+    'cardinality' => '1',
+    'deleted' => '0',
+  );
+
   return $fields;
 }
 
@@ -877,78 +905,6 @@ function trip_export_drush_ctex_bonus_instances() {
     'deleted' => '0',
   );
 
-  $instances['node:forum_expat:field_topic'] = array(
-    'label' => 'topic',
-    'widget' => array(
-      'weight' => '-2',
-      'type' => 'options_select',
-      'module' => 'options',
-      'active' => 1,
-      'settings' => array(),
-    ),
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'type' => 'taxonomy_term_reference_link',
-        'settings' => array(),
-        'module' => 'taxonomy',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'type' => 'hidden',
-        'label' => 'above',
-        'settings' => array(),
-        'weight' => 0,
-      ),
-    ),
-    'required' => 0,
-    'description' => '',
-    'default_value' => NULL,
-    'field_name' => 'field_topic',
-    'entity_type' => 'node',
-    'bundle' => 'forum_expat',
-    'deleted' => '0',
-  );
-
-  $instances['node:forum_expat:field_style'] = array(
-    'label' => 'style',
-    'widget' => array(
-      'weight' => '-1',
-      'type' => 'options_select',
-      'module' => 'options',
-      'active' => 1,
-      'settings' => array(),
-    ),
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'type' => 'taxonomy_term_reference_link',
-        'settings' => array(),
-        'module' => 'taxonomy',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'type' => 'hidden',
-        'label' => 'above',
-        'settings' => array(),
-        'weight' => 0,
-      ),
-    ),
-    'required' => 0,
-    'description' => '',
-    'default_value' => NULL,
-    'field_name' => 'field_style',
-    'entity_type' => 'node',
-    'bundle' => 'forum_expat',
-    'deleted' => '0',
-  );
-
   $instances['node:forum_other:body'] = array(
     'label' => 'Body',
     'widget' => array(
@@ -1066,6 +1022,42 @@ function trip_export_drush_ctex_bonus_instances() {
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_destination',
+    'entity_type' => 'node',
+    'bundle' => 'forum_travelmate',
+    'deleted' => '0',
+  );
+
+  $instances['node:forum_travelmate:field_style'] = array(
+    'label' => 'style',
+    'widget' => array(
+      'weight' => 0,
+      'type' => 'options_select',
+      'module' => 'options',
+      'active' => 1,
+      'settings' => array(),
+    ),
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'module' => 'taxonomy',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => 0,
+    'description' => '',
+    'default_value' => NULL,
+    'field_name' => 'field_style',
     'entity_type' => 'node',
     'bundle' => 'forum_travelmate',
     'deleted' => '0',
@@ -1275,6 +1267,80 @@ function trip_export_drush_ctex_bonus_instances() {
     'entity_type' => 'node',
     'bundle' => 'news',
     'deleted' => '0',
+  );
+
+  $instances['node:news:field_topic'] = array(
+    'label' => 'topic',
+    'widget' => array(
+      'weight' => '0',
+      'type' => 'options_select',
+      'module' => 'options',
+      'active' => 1,
+      'settings' => array(),
+    ),
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'module' => 'taxonomy',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => 0,
+    'description' => '',
+    'default_value' => NULL,
+    'field_name' => 'field_topic',
+    'entity_type' => 'node',
+    'bundle' => 'news',
+    'deleted' => '0',
+  );
+
+  $instances['node:news:field_lyhiuudislink'] = array(
+    'label' => 'lyhiuudislink',
+    'widget' => array(
+      'type' => 'text_textfield',
+      'weight' => '1',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'module' => 'text',
+    ),
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'text_default',
+        'settings' => array(),
+        'module' => 'text',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => FALSE,
+    'description' => '',
+    'field_name' => 'field_lyhiuudislink',
+    'entity_type' => 'node',
+    'bundle' => 'news',
+    'deleted' => '0',
+    'default_value' => NULL,
   );
 
   $instances['user:user:field_user_image'] = array(
