@@ -12,40 +12,5 @@
 function trip_export_drush_ctex_bonus_menus() {
   $menus = array();
 
-  $menus['main-menu'] = (object) array(
-    'menu_name' => 'main-menu',
-    'title' => 'Main menu',
-    'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
-    'links' => array(
-      'forum' => array(
-        'link_path' => 'forum',
-        'router_path' => 'forum',
-        'link_title' => 'Forum',
-        'options' => 'a:0:{}',
-        'hidden' => '0',
-        'external' => '0',
-        'weight' => '0',
-      ),
-      'images' => array(
-        'link_path' => 'images',
-        'router_path' => 'images',
-        'link_title' => 'Images',
-        'options' => 'a:0:{}',
-        'hidden' => '0',
-        'external' => '0',
-        'weight' => '1',
-      ),
-      'users' => array(
-        'link_path' => 'users',
-        'router_path' => 'users',
-        'link_title' => 'Users',
-        'options' => 'a:0:{}',
-        'hidden' => '0',
-        'external' => '0',
-        'weight' => '2',
-      ),
-    ),
-  );
-
   return $menus;
 }
