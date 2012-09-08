@@ -16,35 +16,36 @@ function trip_export_drush_ctex_bonus_menus() {
     'menu_name' => 'main-menu',
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
-        'links' => array(
-          'forum/all' => array(
-            'link_path' => 'forum/all',
-            'router_path' => 'forum/%',
-            'link_title' => 'All',
-            'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
-            'hidden' => '0',
-            'external' => '0',
-            'weight' => '0',
-          ),
-          'forum/blog' => array(
-            'link_path' => 'forum/blog',
-            'router_path' => 'forum/%',
-            'link_title' => 'Blogs',
-            'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
-            'hidden' => '0',
-            'external' => '0',
-            'weight' => '0',
-          ),
-          'forum/forum_other' => array(
-            'link_path' => 'forum/forum_other',
-            'router_path' => 'forum/%',
-            'link_title' => 'Other',
-            'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
-            'hidden' => '0',
-            'external' => '0',
-            'weight' => '0',
-          ),
-        ),  );
+    'links' => array(
+      'forum/all' => array(
+        'link_path' => 'forum/all',
+        'router_path' => 'forum/%',
+        'link_title' => 'All',
+        'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '0',
+      ),
+      'forum/blog' => array(
+        'link_path' => 'forum/blog',
+        'router_path' => 'forum/%',
+        'link_title' => 'Blogs',
+        'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '0',
+      ),
+      'forum/forum_other' => array(
+        'link_path' => 'forum/forum_other',
+        'router_path' => 'forum/%',
+        'link_title' => 'Other',
+        'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '0',
+      ),
+    ),
+  );
 
   return $menus;
 }
