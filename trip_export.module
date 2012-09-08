@@ -135,3 +135,21 @@ function trip_export_image_default_styles() {
 
   return $styles;
 }
+
+/**
+ * Implements hook_default_rules_configuration().
+ */
+function trip_export_default_rules_configuration() {
+  $items = array();
+  $items['rules_forum_cache'] = entity_import('rules_config', '{ "rules_forum_cache" : {
+      "LABEL" : "forum_cache",
+      "PLUGIN" : "reaction rule",
+      "REQUIRES" : [ "cache_actions", "rules", "comment" ],
+      "ON" : [ "node_insert", "node_update", "node_delete", "comment_insert" ],
+      "DO" : [
+        { "cache_actions_action_clear_views_cache" : { "view" : { "value" : { "forums" : "forums" } } } }
+      ]
+    }
+  }');
+  return $items;
+}

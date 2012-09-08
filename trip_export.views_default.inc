@@ -26,7 +26,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['title'] = 'Forum';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'rules';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -186,6 +186,17 @@ function trip_export_views_default_views() {
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'all' => 'all',
+    'blog' => 'blog',
+    'forum' => 'forum',
+    'forum_buysell' => 'forum_buysell',
+    'forum_expat' => 'forum_expat',
+    'forum_other' => 'forum_other',
+    'forum_travelmate' => 'forum_travelmate',
+    'image' => 'image',
+    'news' => 'news',
+  );
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
