@@ -559,6 +559,7 @@ function trip_export_drush_ctex_bonus_variables() {
     'taxonomy_term' => TRUE,
     'tracker' => TRUE,
     'forum' => FALSE,
+    'forums' => FALSE,
   );
 
   return $variables;
