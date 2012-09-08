@@ -1,15 +1,4 @@
 name = trip_export export module
 description = Export objects from CTools
-dependencies[] = views
 package = Chaos tool suite
 core = 7.x
-dependencies[] = block
-dependencies[] = entity
-dependencies[] = filter
-dependencies[] = image
-dependencies[] = locale
-dependencies[] = menu
-dependencies[] = node
-dependencies[] = options
-dependencies[] = taxonomy
-dependencies[] = text

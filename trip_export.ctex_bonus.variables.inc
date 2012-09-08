@@ -35,6 +35,12 @@ function trip_export_drush_ctex_bonus_variables() {
     'cache_block' => 'cache_block',
     'cache_filter' => 'cache_filter',
     'cache_page' => 'cache_page',
+    'cache_entity_comment' => 'cache_entity_comment',
+    'cache_entity_file' => 'cache_entity_file',
+    'cache_entity_node' => 'cache_entity_node',
+    'cache_entity_taxonomy_term' => 'cache_entity_taxonomy_term',
+    'cache_entity_taxonomy_vocabulary' => 'cache_entity_taxonomy_vocabulary',
+    'cache_entity_user' => 'cache_entity_user',
     'cache_field' => 'cache_field',
     'cache_image' => 'cache_image',
     'cache_views' => 'cache_views',
@@ -168,6 +174,8 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
+  $variables['entitycache_enabled'] = TRUE;
+
   $variables['field_bundle_settings_node__blog'] = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -256,7 +264,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 4;
+  $variables['language_count'] = 5;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
@@ -557,6 +565,8 @@ function trip_export_drush_ctex_bonus_variables() {
     'taxonomy_term' => TRUE,
     'tracker' => TRUE,
     'forum' => FALSE,
+    'users' => TRUE,
+    'forums' => TRUE,
   );
 
   return $variables;
