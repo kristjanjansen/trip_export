@@ -14,7 +14,6 @@
 function trip_export_drush_ctex_bonus_info_dependencies() {
   return array(
     'block',
-    'entity',
     'filter',
     'image',
     'locale',
@@ -24,18 +23,6 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'taxonomy',
     'text',
     'views',
-    'cache_actions',
-    'views_ui',
-    'bulk_export',
-    'views_litepager',
-    'views_json',
-    'field_ui',
-    'toolbar',
-    'devel',
-    'comment',
-    'locale',
-    'trip_utils',
-    'trip_migrate'
   );
 }
 

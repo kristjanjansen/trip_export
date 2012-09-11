@@ -4,7 +4,6 @@ dependencies[] = views
 package = Chaos tool suite
 core = 7.x
 dependencies[] = block
-dependencies[] = entity
 dependencies[] = filter
 dependencies[] = image
 dependencies[] = locale
