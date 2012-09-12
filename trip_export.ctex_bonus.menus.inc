@@ -44,6 +44,15 @@ function trip_export_drush_ctex_bonus_menus() {
         'external' => '0',
         'weight' => '0',
       ),
+      'users' => array(
+        'link_path' => 'users',
+        'router_path' => 'users',
+        'link_title' => 'Users',
+        'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '0',
+      ),
     ),
   );
 

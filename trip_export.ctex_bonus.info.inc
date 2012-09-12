@@ -22,7 +22,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'options',
     'taxonomy',
     'text',
-    'views',
+    'views'
   );
 }
 

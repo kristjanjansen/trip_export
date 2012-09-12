@@ -258,7 +258,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 6;
+  $variables['language_count'] = 7;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
@@ -310,47 +310,44 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['menu_expanded'] = array();
 
+  $variables['menu_main_links_source'] = '';
+
   $variables['menu_masks'] = array(
-    0 => 507,
-    1 => 506,
-    2 => 501,
-    3 => 493,
-    4 => 253,
-    5 => 252,
-    6 => 250,
-    7 => 247,
-    8 => 246,
-    9 => 245,
-    10 => 126,
-    11 => 125,
-    12 => 124,
-    13 => 123,
-    14 => 122,
-    15 => 121,
-    16 => 117,
-    17 => 63,
-    18 => 62,
-    19 => 61,
-    20 => 60,
-    21 => 59,
-    22 => 58,
-    23 => 44,
-    24 => 31,
-    25 => 30,
-    26 => 29,
-    27 => 27,
-    28 => 24,
-    29 => 21,
-    30 => 15,
-    31 => 14,
-    32 => 13,
-    33 => 11,
-    34 => 7,
-    35 => 6,
-    36 => 5,
-    37 => 3,
-    38 => 2,
-    39 => 1,
+    0 => 501,
+    1 => 493,
+    2 => 250,
+    3 => 247,
+    4 => 246,
+    5 => 245,
+    6 => 125,
+    7 => 124,
+    8 => 123,
+    9 => 122,
+    10 => 121,
+    11 => 117,
+    12 => 63,
+    13 => 62,
+    14 => 61,
+    15 => 60,
+    16 => 59,
+    17 => 58,
+    18 => 44,
+    19 => 31,
+    20 => 30,
+    21 => 29,
+    22 => 27,
+    23 => 24,
+    24 => 21,
+    25 => 15,
+    26 => 14,
+    27 => 13,
+    28 => 11,
+    29 => 7,
+    30 => 6,
+    31 => 5,
+    32 => 3,
+    33 => 2,
+    34 => 1,
   );
 
   $variables['menu_options_blog'] = array(
@@ -394,6 +391,8 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['menu_parent_news'] = 'main-menu:0';
 
   $variables['menu_parent_travel_buysell'] = 'main-menu:0';
+
+  $variables['menu_secondary_links_source'] = '';
 
   $variables['node_options_blog'] = array(
     0 => 'status',

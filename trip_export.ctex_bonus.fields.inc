@@ -1362,7 +1362,7 @@ function trip_export_drush_ctex_bonus_instances() {
       'min_resolution' => '',
       'alt_field' => 0,
       'title_field' => 0,
-      'default_image' => '4331',
+      'default_image' => '202',
       'user_register_form' => 0,
     ),
     'display' => array(

@@ -124,5 +124,21 @@ function trip_export_drush_ctex_bonus_blocks() {
     'block_role' => array(),
   );
 
+  $blocks['system-main-menu-island'] = (object) array(
+    'module' => 'system',
+    'delta' => 'main-menu',
+    'theme' => 'island',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+    'block_node_type' => array(),
+    'block_role' => array(),
+  );
+
   return $blocks;
 }
