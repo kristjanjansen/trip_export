@@ -73,7 +73,7 @@ function trip_export_drush_ctex_bonus_fields() {
     'translatable' => '0',
     'settings' => array(
       'uri_scheme' => 'public',
-      'default_image' => '1',
+      'default_image' => 0,
     ),
     'foreign keys' => array(
       'fid' => array(
@@ -1305,44 +1305,6 @@ function trip_export_drush_ctex_bonus_instances() {
     'deleted' => '0',
   );
 
-  $instances['node:news:field_lyhiuudislink'] = array(
-    'label' => 'lyhiuudislink',
-    'widget' => array(
-      'type' => 'text_textfield',
-      'weight' => '1',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'module' => 'text',
-    ),
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'type' => 'text_default',
-        'settings' => array(),
-        'module' => 'text',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'type' => 'hidden',
-        'label' => 'above',
-        'settings' => array(),
-        'weight' => 0,
-      ),
-    ),
-    'required' => FALSE,
-    'description' => '',
-    'default_value' => NULL,
-    'field_name' => 'field_lyhiuudislink',
-    'entity_type' => 'node',
-    'bundle' => 'news',
-    'deleted' => '0',
-  );
-
   $instances['user:user:field_user_image'] = array(
     'widget' => array(
       'weight' => 7,
@@ -1362,7 +1324,7 @@ function trip_export_drush_ctex_bonus_instances() {
       'min_resolution' => '',
       'alt_field' => 0,
       'title_field' => 0,
-      'default_image' => '1069',
+      'default_image' => '1',
       'user_register_form' => 0,
     ),
     'display' => array(

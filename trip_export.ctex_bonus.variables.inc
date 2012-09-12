@@ -277,7 +277,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 10;
+  $variables['language_count'] = 11;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
