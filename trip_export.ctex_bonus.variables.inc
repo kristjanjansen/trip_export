@@ -277,7 +277,17 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 11;
+  $variables['imagemagick_convert'] = '/usr/local/bin/convert';
+
+  $variables['imagemagick_debug'] = 1;
+
+  $variables['imagemagick_quality'] = '75';
+
+  $variables['image_jpeg_quality'] = '75';
+
+  $variables['image_toolkit'] = 'gd';
+
+  $variables['language_count'] = 12;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',

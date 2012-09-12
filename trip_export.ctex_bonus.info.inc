@@ -21,6 +21,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'menu',
     'node',
     'options',
+    'path',
     'taxonomy',
     'text',
     'views'
@@ -57,6 +58,9 @@ function trip_export_drush_ctex_bonus_info_files() {
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.fields.inc' => array(
+      'overwrite' => TRUE,
+    ),
+    'trip_export.ctex_bonus.aliases.inc' => array(
       'overwrite' => TRUE,
     ),
     'trip_export.ctex_bonus.menus.inc' => array(

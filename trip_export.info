@@ -11,5 +11,6 @@ dependencies[] = locale
 dependencies[] = menu
 dependencies[] = node
 dependencies[] = options
+dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = text
