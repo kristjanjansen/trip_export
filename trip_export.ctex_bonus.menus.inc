@@ -24,7 +24,7 @@ function trip_export_drush_ctex_bonus_menus() {
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '0',
+        'weight' => '-50',
       ),
       'forum/blog' => array(
         'link_path' => 'forum/blog',
@@ -33,7 +33,7 @@ function trip_export_drush_ctex_bonus_menus() {
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '0',
+        'weight' => '-49',
       ),
       'forum/forum_other' => array(
         'link_path' => 'forum/forum_other',
@@ -42,7 +42,7 @@ function trip_export_drush_ctex_bonus_menus() {
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '0',
+        'weight' => '-48',
       ),
       'users' => array(
         'link_path' => 'users',
@@ -51,7 +51,16 @@ function trip_export_drush_ctex_bonus_menus() {
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '0',
+        'weight' => '-46',
+      ),
+      'images' => array(
+        'link_path' => 'images',
+        'router_path' => 'images',
+        'link_title' => 'Images',
+        'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
+        'hidden' => '0',
+        'external' => '0',
+        'weight' => '-47',
       ),
     ),
   );
