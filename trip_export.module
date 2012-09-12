@@ -93,7 +93,7 @@ function trip_export_image_default_styles() {
   $styles['image_small'] = array(
     'name' => 'image_small',
     'effects' => array(
-      3 => array(
+      1 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -103,8 +103,8 @@ function trip_export_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '145',
-          'height' => '145',
+          'width' => '165',
+          'height' => '165',
         ),
         'weight' => '1',
       ),
