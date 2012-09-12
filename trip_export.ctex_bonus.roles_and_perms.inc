@@ -16,6 +16,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'name' => 'anonymous user',
     'weight' => '0',
     'permissions' => array(
+      'access comments' => TRUE,
       'access content' => TRUE,
       'use text format filtered_html' => TRUE,
     ),
@@ -25,6 +26,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'name' => 'authenticated user',
     'weight' => '1',
     'permissions' => array(
+      'access comments' => TRUE,
       'access content' => TRUE,
       'use text format filtered_html' => TRUE,
     ),

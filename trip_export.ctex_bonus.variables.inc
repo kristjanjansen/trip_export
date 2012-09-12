@@ -254,11 +254,30 @@ function trip_export_drush_ctex_bonus_variables() {
     ),
   );
 
+  $variables['field_bundle_settings_user__user'] = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(
+        'summary' => array(
+          'default' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
+    ),
+  );
+
   $variables['file_temporary_path'] = '/Applications/MAMP/tmp/php';
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['language_count'] = 8;
+  $variables['language_count'] = 9;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',

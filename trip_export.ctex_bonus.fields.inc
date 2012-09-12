@@ -1362,19 +1362,19 @@ function trip_export_drush_ctex_bonus_instances() {
       'min_resolution' => '',
       'alt_field' => 0,
       'title_field' => 0,
-      'default_image' => '202',
+      'default_image' => '1069',
       'user_register_form' => 0,
     ),
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'type' => 'image',
+        'weight' => '0',
         'settings' => array(
-          'image_style' => '',
+          'image_style' => 'user_big',
           'image_link' => '',
         ),
         'module' => 'image',
-        'weight' => 0,
       ),
     ),
     'required' => 0,

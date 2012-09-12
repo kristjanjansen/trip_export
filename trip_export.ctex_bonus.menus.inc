@@ -42,7 +42,7 @@ function trip_export_drush_ctex_bonus_menus() {
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '-48',
+        'weight' => '-47',
       ),
       'users' => array(
         'link_path' => 'users',
@@ -53,14 +53,14 @@ function trip_export_drush_ctex_bonus_menus() {
         'external' => '0',
         'weight' => '-46',
       ),
-      'images' => array(
-        'link_path' => 'images',
-        'router_path' => 'images',
-        'link_title' => 'Images',
+      'forum/forum_expat' => array(
+        'link_path' => 'forum/forum_expat',
+        'router_path' => 'forum/%',
+        'link_title' => 'Expats',
         'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:0:"";}}',
         'hidden' => '0',
         'external' => '0',
-        'weight' => '-47',
+        'weight' => '-48',
       ),
     ),
   );
