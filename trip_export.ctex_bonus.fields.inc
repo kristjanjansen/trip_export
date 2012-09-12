@@ -73,7 +73,7 @@ function trip_export_drush_ctex_bonus_fields() {
     'translatable' => '0',
     'settings' => array(
       'uri_scheme' => 'public',
-      'default_image' => 0,
+      'default_image' => '1',
     ),
     'foreign keys' => array(
       'fid' => array(
