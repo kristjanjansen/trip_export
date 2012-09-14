@@ -160,6 +160,8 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['date_default_timezone'] = 'Europe/Tallinn';
 
+  $variables['default_nodes_main'] = '10';
+
   $variables['devel_query_display'] = 1;
 
   $variables['dev_timer'] = 1;
@@ -287,7 +289,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 12;
+  $variables['language_count'] = 13;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
@@ -541,11 +543,19 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['save_continue_travel_buysell'] = 'Save and add fields';
 
+  $variables['site_403'] = '';
+
+  $variables['site_404'] = '';
+
   $variables['site_default_country'] = '';
+
+  $variables['site_frontpage'] = 'forum/all';
 
   $variables['site_mail'] = 'admin@example.com';
 
   $variables['site_name'] = 'Site-Install';
+
+  $variables['site_slogan'] = '';
 
   $variables['theme_default'] = 'island';
 
