@@ -110,7 +110,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Field: User: field_user_image */
+  /* Field: User: user_image */
   $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
   $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
   $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';
@@ -371,7 +371,7 @@ function trip_export_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: User: field_user_image */
+  /* Field: User: user_image */
   $handler->display->display_options['fields']['field_user_image']['id'] = 'field_user_image';
   $handler->display->display_options['fields']['field_user_image']['table'] = 'field_data_field_user_image';
   $handler->display->display_options['fields']['field_user_image']['field'] = 'field_user_image';

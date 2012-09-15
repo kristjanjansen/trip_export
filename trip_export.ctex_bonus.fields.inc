@@ -68,35 +68,6 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
-  $fields['field_user_image'] = array(
-    'entity_types' => array(),
-    'translatable' => '0',
-    'settings' => array(
-      'uri_scheme' => 'public',
-      'default_image' => 0,
-    ),
-    'foreign keys' => array(
-      'fid' => array(
-        'table' => 'file_managed',
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'field_name' => 'field_user_image',
-    'type' => 'image',
-    'module' => 'image',
-    'active' => '1',
-    'locked' => '0',
-    'cardinality' => '1',
-    'deleted' => '0',
-  );
-
   $fields['field_destination'] = array(
     'translatable' => '0',
     'entity_types' => array(),
@@ -196,6 +167,7 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
+
   $fields['field_image_image'] = array(
     'translatable' => '0',
     'entity_types' => array(),
@@ -225,28 +197,29 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
-  $fields['field_lyhiuudislink'] = array(
+  $fields['field_user_image'] = array(
     'translatable' => '0',
     'entity_types' => array(),
     'settings' => array(
-      'max_length' => '255',
+      'uri_scheme' => 'public',
+      'default_image' => 0,
     ),
     'foreign keys' => array(
-      'format' => array(
-        'table' => 'filter_format',
+      'fid' => array(
+        'table' => 'file_managed',
         'columns' => array(
-          'format' => 'format',
+          'fid' => 'fid',
         ),
       ),
     ),
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'fid' => array(
+        0 => 'fid',
       ),
     ),
-    'field_name' => 'field_lyhiuudislink',
-    'type' => 'text',
-    'module' => 'text',
+    'field_name' => 'field_user_image',
+    'type' => 'image',
+    'module' => 'image',
     'active' => '1',
     'locked' => '0',
     'cardinality' => '1',
@@ -1106,55 +1079,6 @@ function trip_export_drush_ctex_bonus_instances() {
     'deleted' => '0',
   );
 
-  $instances['node:image:field_image_image'] = array(
-    'label' => 'image_image',
-    'widget' => array(
-      'weight' => '-3',
-      'type' => 'image_image',
-      'module' => 'image',
-      'active' => 1,
-      'settings' => array(
-        'progress_indicator' => 'throbber',
-        'preview_image_style' => 'thumbnail',
-      ),
-    ),
-    'settings' => array(
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'alt_field' => 0,
-      'title_field' => 0,
-      'default_image' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'type' => 'image',
-        'settings' => array(
-          'image_style' => '',
-          'image_link' => '',
-        ),
-        'module' => 'image',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'type' => 'hidden',
-        'label' => 'above',
-        'settings' => array(),
-        'weight' => 0,
-      ),
-    ),
-    'required' => 0,
-    'description' => '',
-    'field_name' => 'field_image_image',
-    'entity_type' => 'node',
-    'bundle' => 'image',
-    'deleted' => '0',
-  );
-
   $instances['node:image:field_destination'] = array(
     'label' => 'destination',
     'widget' => array(
@@ -1185,6 +1109,55 @@ function trip_export_drush_ctex_bonus_instances() {
     'description' => '',
     'default_value' => NULL,
     'field_name' => 'field_destination',
+    'entity_type' => 'node',
+    'bundle' => 'image',
+    'deleted' => '0',
+  );
+
+  $instances['node:image:field_image_image'] = array(
+    'label' => 'image_image',
+    'widget' => array(
+      'weight' => 0,
+      'type' => 'image_image',
+      'module' => 'image',
+      'active' => 1,
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+        'preview_image_style' => 'thumbnail',
+      ),
+    ),
+    'settings' => array(
+      'file_directory' => 'images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'alt_field' => 0,
+      'title_field' => 0,
+      'default_image' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'type' => 'image',
+        'settings' => array(
+          'image_style' => '',
+          'image_link' => '',
+        ),
+        'module' => 'image',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'type' => 'hidden',
+        'label' => 'above',
+        'settings' => array(),
+        'weight' => 0,
+      ),
+    ),
+    'required' => 0,
+    'description' => '',
+    'field_name' => 'field_image_image',
     'entity_type' => 'node',
     'bundle' => 'image',
     'deleted' => '0',
@@ -1306,8 +1279,9 @@ function trip_export_drush_ctex_bonus_instances() {
   );
 
   $instances['user:user:field_user_image'] = array(
+    'label' => 'user_image',
     'widget' => array(
-      'weight' => 7,
+      'weight' => '7',
       'type' => 'image_image',
       'module' => 'image',
       'active' => 1,
@@ -1317,32 +1291,30 @@ function trip_export_drush_ctex_bonus_instances() {
       ),
     ),
     'settings' => array(
-      'file_directory' => '',
+      'file_directory' => 'images_user',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
       'alt_field' => 0,
       'title_field' => 0,
-      'default_image' => '1',
+      'default_image' => 0,
       'user_register_form' => 0,
     ),
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'type' => 'image',
-        'weight' => '0',
         'settings' => array(
-          'image_style' => 'user_big',
+          'image_style' => '',
           'image_link' => '',
         ),
         'module' => 'image',
+        'weight' => 0,
       ),
     ),
     'required' => 0,
-    'label' => 'field_user_image',
     'description' => '',
-    'default_value' => NULL,
     'field_name' => 'field_user_image',
     'entity_type' => 'user',
     'bundle' => 'user',

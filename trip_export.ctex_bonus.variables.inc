@@ -263,7 +263,14 @@ function trip_export_drush_ctex_bonus_variables() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'account' => array(
+          'weight' => '-10',
+        ),
+        'timezone' => array(
+          'weight' => '6',
+        ),
+      ),
       'display' => array(
         'summary' => array(
           'default' => array(
@@ -289,7 +296,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 13;
+  $variables['language_count'] = 14;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
