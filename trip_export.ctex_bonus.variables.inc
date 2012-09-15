@@ -296,7 +296,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 14;
+  $variables['language_count'] = 15;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',

@@ -167,7 +167,6 @@ function trip_export_drush_ctex_bonus_fields() {
     'deleted' => '0',
   );
 
-
   $fields['field_image_image'] = array(
     'translatable' => '0',
     'entity_types' => array(),
@@ -1298,7 +1297,7 @@ function trip_export_drush_ctex_bonus_instances() {
       'min_resolution' => '',
       'alt_field' => 0,
       'title_field' => 0,
-      'default_image' => 0,
+      'default_image' => '1',
       'user_register_form' => 0,
     ),
     'display' => array(
