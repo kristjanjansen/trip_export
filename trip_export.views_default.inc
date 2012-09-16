@@ -401,6 +401,12 @@ function trip_export_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: User: user_image (field_user_image:fid) */
+  $handler->display->display_options['filters']['field_user_image_fid']['id'] = 'field_user_image_fid';
+  $handler->display->display_options['filters']['field_user_image_fid']['table'] = 'field_data_field_user_image';
+  $handler->display->display_options['filters']['field_user_image_fid']['field'] = 'field_user_image_fid';
+  $handler->display->display_options['filters']['field_user_image_fid']['operator'] = '!=';
+  $handler->display->display_options['filters']['field_user_image_fid']['value']['value'] = '1';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

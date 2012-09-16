@@ -30,6 +30,120 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['additional_settings__active_tab_travel_buysell'] = 'edit-submission';
 
+  $variables['block_cache'] = 1;
+
+  $variables['boost_add_default_charset'] = 1;
+
+  $variables['boost_apache_etag'] = '3';
+
+  $variables['boost_apache_xheader'] = '1';
+
+  $variables['boost_cacheability_option'] = '0';
+
+  $variables['boost_cacheability_pages'] = '';
+
+  $variables['boost_char'] = '_';
+
+  $variables['boost_charset_type'] = 'utf-8';
+
+  $variables['boost_comment_end_application/rss'] = ' -->';
+
+  $variables['boost_comment_end_application/rss+xml'] = ' -->';
+
+  $variables['boost_comment_end_application/xml'] = ' -->';
+
+  $variables['boost_comment_end_text/html'] = ' -->';
+
+  $variables['boost_comment_end_text/javascript'] = ' */';
+
+  $variables['boost_comment_end_text/xml'] = ' -->';
+
+  $variables['boost_comment_start_application/rss'] = '<!-- ';
+
+  $variables['boost_comment_start_application/rss+xml'] = '<!-- ';
+
+  $variables['boost_comment_start_application/xml'] = '<!-- ';
+
+  $variables['boost_comment_start_text/html'] = '<!-- ';
+
+  $variables['boost_comment_start_text/javascript'] = '/* ';
+
+  $variables['boost_comment_start_text/xml'] = '<!-- ';
+
+  $variables['boost_document_root'] = '%{DOCUMENT_ROOT}';
+
+  $variables['boost_enabled_application/rss'] = 0;
+
+  $variables['boost_enabled_application/rss+xml'] = 0;
+
+  $variables['boost_enabled_application/xml'] = 0;
+
+  $variables['boost_enabled_text/html'] = 1;
+
+  $variables['boost_enabled_text/javascript'] = 0;
+
+  $variables['boost_enabled_text/xml'] = 0;
+
+  $variables['boost_extension_application/rss'] = 'xml';
+
+  $variables['boost_extension_application/rss+xml'] = 'xml';
+
+  $variables['boost_extension_application/xml'] = 'xml';
+
+  $variables['boost_extension_text/html'] = 'html';
+
+  $variables['boost_extension_text/javascript'] = 'json';
+
+  $variables['boost_extension_text/xml'] = 'xml';
+
+  $variables['boost_gzip_application/rss'] = TRUE;
+
+  $variables['boost_gzip_application/rss+xml'] = TRUE;
+
+  $variables['boost_gzip_application/xml'] = TRUE;
+
+  $variables['boost_gzip_text/html'] = TRUE;
+
+  $variables['boost_gzip_text/javascript'] = TRUE;
+
+  $variables['boost_gzip_text/xml'] = TRUE;
+
+  $variables['boost_lifetime_max_application/rss'] = '3600';
+
+  $variables['boost_lifetime_max_application/rss+xml'] = '3600';
+
+  $variables['boost_lifetime_max_application/xml'] = '3600';
+
+  $variables['boost_lifetime_max_text/html'] = '600';
+
+  $variables['boost_lifetime_max_text/javascript'] = '0';
+
+  $variables['boost_lifetime_max_text/xml'] = '3600';
+
+  $variables['boost_lifetime_min_application/rss'] = '0';
+
+  $variables['boost_lifetime_min_application/rss+xml'] = '0';
+
+  $variables['boost_lifetime_min_application/xml'] = '0';
+
+  $variables['boost_lifetime_min_text/html'] = '600';
+
+  $variables['boost_lifetime_min_text/javascript'] = '0';
+
+  $variables['boost_lifetime_min_text/xml'] = '0';
+
+  $variables['boost_message_debug'] = 1;
+
+  $variables['boost_normal_dir'] = 'normal';
+
+  $variables['boost_root_cache_dir'] = 'sites/default/files/boost/cache';
+
+  $variables['boost_server_name_http_host'] = '%{HTTP_HOST}';
+
+  $variables['boost_ssl_bypass'] = 1;
+
+  $variables['cache'] = 1;
+
   $variables['cache_actions_get_cache_bins'] = array(
     'cache' => 'cache',
     'cache_block' => 'cache_block',
@@ -41,6 +155,30 @@ function trip_export_drush_ctex_bonus_variables() {
     'cache_views_data' => 'cache_views_data',
     'cache_rules' => 'cache_rules',
   );
+
+  $variables['cache_flush_cache'] = 1347785961;
+
+  $variables['cache_flush_cache_block'] = 0;
+
+  $variables['cache_flush_cache_field'] = 1347785961;
+
+  $variables['cache_flush_cache_filter'] = 1347785961;
+
+  $variables['cache_flush_cache_form'] = 1347785961;
+
+  $variables['cache_flush_cache_image'] = 1347785961;
+
+  $variables['cache_flush_cache_menu'] = 1347785961;
+
+  $variables['cache_flush_cache_page'] = 1347786123;
+
+  $variables['cache_flush_cache_path'] = 1347785961;
+
+  $variables['cache_flush_cache_views'] = 1347785961;
+
+  $variables['cache_flush_cache_views_data'] = 1347785961;
+
+  $variables['cache_lifetime'] = '600';
 
   $variables['clean_url'] = TRUE;
 
@@ -166,7 +304,27 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['dev_timer'] = 1;
 
+  $variables['drupal_css_cache_files'] = array(
+    '823ba1006db72809515d2221cd02ec1075d7b49b0c07f49307b3a7930bfdd9e4' => 'public://css/css_bJAVDSUOFMSRcDqRburqEteFVmXUUEL-O9dri4PjPAY.css',
+    'e4973164d49af523443d34ea0c3130198420566bc10607294440f407237c1be8' => 'public://css/css_NdVgz6YKifxQUEsW5xls_zI7Pn2F7E5U5Wb29zcu3vo.css',
+    'd2b3cbbf84b12bac0a0c00116082be94df58ed58cbd78d2dda95bad18c30f8a6' => 'public://css/css_iO254im2kUVNCK0u5rsNXeu4R1pHiJZqfs2ZUzNQW8M.css',
+    '58e076ea79ef502f88c1256bc48b23d0d09ccfc145be5d3270e3e15ccc81f9ba' => 'public://css/css_NzMulmiv2A0ffH2mf_H5_LXspusSejcSypeJHpiSVJE.css',
+    '592db66916e1dd3416cbe95bcb34a5a68775eb0b7cf95e4c858671de35290cc9' => 'public://css/css_3jSHVlJzmjcTvkK42gS5s2asHtijFDiAFBvRvggmLak.css',
+    'ad220a642322a1f01153918b420e4cf1151e64b826892dbc0369027d3e77a685' => 'public://css/css_C67caBAEkLpa8dyU8yl1J0FR-j1bwWt2TlICxZsRWOY.css',
+    'd2fa56ed99caafe54f52f1f4994e3f099424199d7e511604273390678599eae6' => 'public://css/css_DEgjmmf1skgxbQHgebBCQboEySIFf2fSzrUlTRcSZWw.css',
+  );
+
   $variables['drupal_http_request_fails'] = FALSE;
+
+  $variables['drupal_js_cache_files'] = array(
+    'a571bc4156d0556568d7f04bc93f81c658b2e21fef9bb8229528c077ce9a0ccf' => 'public://js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js',
+    '1a30c351624a627553d78983ad986922fa2576d2391858497e3ca6bb022b6015' => 'public://js/js_CC-zfeuQHcDhFtVRuKW53h30TL7j_105J32Nz8b8R38.js',
+    '53f34982e0dd4fe33e1b351d5486ee76af300b1381c17c3bca33fa1f57fd400b' => 'public://js/js_9on95PJoK_n1kWSeaKIs9x_Uz29E50uRd9DxOYAAOW8.js',
+    '9c7ad3b64966f68be435d73dfefb1ad341e46e22696cb373731d43092add0994' => 'public://js/js_I23gxiikXxx_6GGz6rJ54UoPf8kO1zLBQwc8jUznXYM.js',
+    'e5d92c38b5ef3e5f2a72e0a7265ee02011544873c35af2cd641b79d767592aae' => 'public://js/js_gmvceVXcbrSbKshAQe2bUSjFdWaUpwU8384LOsePehc.js',
+    '090d47597a0f321ed841655fe96c0955c4e29b29f8f80ef8a36f2faaf0350cc0' => 'public://js/js_3Ds9oaEwiiCeNhNQjh8Lz_cH-IcOtMyFPCvdF0fiDb4.js',
+    '509939d51362767285448fc6b8f89046267fe3a4d3b70fe5938f61d44f7a0659' => 'public://js/js_Xxvzm7BXiQ2p3cuU10DhDrYTQWZmIRkj7YyAze1_3r8.js',
+  );
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
@@ -296,7 +454,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 15;
+  $variables['language_count'] = 16;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
@@ -510,6 +668,14 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['node_submitted_news'] = 1;
 
   $variables['node_submitted_travel_buysell'] = 1;
+
+  $variables['page_cache_maximum_age'] = '600';
+
+  $variables['page_compression'] = 1;
+
+  $variables['preprocess_css'] = 1;
+
+  $variables['preprocess_js'] = 1;
 
   $variables['rules_empty_sets'] = array(
     'node_presave' => 0,
