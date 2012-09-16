@@ -158,7 +158,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 0;
+  $variables['cache_flush_cache_block'] = 1347794198;
 
   $variables['cache_flush_cache_field'] = 0;
 
@@ -170,13 +170,13 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_menu'] = 0;
 
-  $variables['cache_flush_cache_page'] = 1347786123;
+  $variables['cache_flush_cache_page'] = 1347794173;
 
   $variables['cache_flush_cache_path'] = 0;
 
   $variables['cache_flush_cache_views'] = 0;
 
-  $variables['cache_flush_cache_views_data'] = 1347785961;
+  $variables['cache_flush_cache_views_data'] = 0;
 
   $variables['cache_lifetime'] = '600';
 
@@ -306,24 +306,30 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['drupal_css_cache_files'] = array(
     '823ba1006db72809515d2221cd02ec1075d7b49b0c07f49307b3a7930bfdd9e4' => 'public://css/css_bJAVDSUOFMSRcDqRburqEteFVmXUUEL-O9dri4PjPAY.css',
+    'cb9f93e666a396bb3eb14c5fd16f7ebd1cdd0067733eb0a2ab1b294b6f14f76f' => 'public://css/css_v3Ftpk-LmXVOPQTfM06CHLGyDALeZyfj6nKEp5TLU9k.css',
     'e4973164d49af523443d34ea0c3130198420566bc10607294440f407237c1be8' => 'public://css/css_NdVgz6YKifxQUEsW5xls_zI7Pn2F7E5U5Wb29zcu3vo.css',
-    'd2b3cbbf84b12bac0a0c00116082be94df58ed58cbd78d2dda95bad18c30f8a6' => 'public://css/css_iO254im2kUVNCK0u5rsNXeu4R1pHiJZqfs2ZUzNQW8M.css',
-    '58e076ea79ef502f88c1256bc48b23d0d09ccfc145be5d3270e3e15ccc81f9ba' => 'public://css/css_NzMulmiv2A0ffH2mf_H5_LXspusSejcSypeJHpiSVJE.css',
-    '592db66916e1dd3416cbe95bcb34a5a68775eb0b7cf95e4c858671de35290cc9' => 'public://css/css_3jSHVlJzmjcTvkK42gS5s2asHtijFDiAFBvRvggmLak.css',
     'ad220a642322a1f01153918b420e4cf1151e64b826892dbc0369027d3e77a685' => 'public://css/css_C67caBAEkLpa8dyU8yl1J0FR-j1bwWt2TlICxZsRWOY.css',
-    'd2fa56ed99caafe54f52f1f4994e3f099424199d7e511604273390678599eae6' => 'public://css/css_DEgjmmf1skgxbQHgebBCQboEySIFf2fSzrUlTRcSZWw.css',
+    '58e076ea79ef502f88c1256bc48b23d0d09ccfc145be5d3270e3e15ccc81f9ba' => 'public://css/css_NzMulmiv2A0ffH2mf_H5_LXspusSejcSypeJHpiSVJE.css',
+    '3e4b187792155b0bfa0d9c9890c063c9a1a48e3e63133581159782c01056e77e' => 'public://css/css_1hBUhXKwQs6YzicVPNK6QG73m_k0sJpDynvL-9LqqLg.css',
+    '41f3a74543aea2924ef6f36185448db49a114d1dd0c11bd16d6a5d92609b80d9' => 'public://css/css_dBduBKaJIauxmVE0xGciUtzgq-WU2Ollv2YwUt_f6Qs.css',
+    'd2b3cbbf84b12bac0a0c00116082be94df58ed58cbd78d2dda95bad18c30f8a6' => 'public://css/css_iO254im2kUVNCK0u5rsNXeu4R1pHiJZqfs2ZUzNQW8M.css',
+    'ac8414a71aa2229b63a13be4ec5f505ef3bc7d90f9f80044c9a9b4c5561e0db6' => 'public://css/css_e7QaBXte1R6sX1PIxyItmKgW6KEndExQwAd-Zrf_0yo.css',
   );
 
   $variables['drupal_http_request_fails'] = FALSE;
 
   $variables['drupal_js_cache_files'] = array(
     'a571bc4156d0556568d7f04bc93f81c658b2e21fef9bb8229528c077ce9a0ccf' => 'public://js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js',
-    '1a30c351624a627553d78983ad986922fa2576d2391858497e3ca6bb022b6015' => 'public://js/js_CC-zfeuQHcDhFtVRuKW53h30TL7j_105J32Nz8b8R38.js',
+    'a607b2c9a2d22e25fd27661c305f807fd26f06235363f5419d538cff70adf2e2' => 'public://js/js_x0Gj5aRedtig6jsWsMvunkhds_c4el4X8jpJUuG4iwU.js',
     '53f34982e0dd4fe33e1b351d5486ee76af300b1381c17c3bca33fa1f57fd400b' => 'public://js/js_9on95PJoK_n1kWSeaKIs9x_Uz29E50uRd9DxOYAAOW8.js',
-    '9c7ad3b64966f68be435d73dfefb1ad341e46e22696cb373731d43092add0994' => 'public://js/js_I23gxiikXxx_6GGz6rJ54UoPf8kO1zLBQwc8jUznXYM.js',
-    'e5d92c38b5ef3e5f2a72e0a7265ee02011544873c35af2cd641b79d767592aae' => 'public://js/js_gmvceVXcbrSbKshAQe2bUSjFdWaUpwU8384LOsePehc.js',
-    '090d47597a0f321ed841655fe96c0955c4e29b29f8f80ef8a36f2faaf0350cc0' => 'public://js/js_3Ds9oaEwiiCeNhNQjh8Lz_cH-IcOtMyFPCvdF0fiDb4.js',
-    '509939d51362767285448fc6b8f89046267fe3a4d3b70fe5938f61d44f7a0659' => 'public://js/js_Xxvzm7BXiQ2p3cuU10DhDrYTQWZmIRkj7YyAze1_3r8.js',
+    '830103153090a6c0fd186b454039611f61829dd10aab181e7e9ae4e68722be33' => 'public://js/js_n48cF77P9Zf4vk_QuKvskjOQbv8iPgmguHne2odxsH0.js',
+    '8cc2ab3b382880b7e86ae24fc13f9ec92e479b9f1dacf702465095dd5c62148e' => 'public://js/js_yMChZ7D5N_olh8RoGQ02xOt1-vMKfF0Mknd6XNu_1pw.js',
+    '3b2163c604e8f802b9104af70c7f93fd49df2191024a9e342ffd62b448e79d34' => 'public://js/js_9Um4Exvyiu4UHuikOvP4pFniwHmd8CggKIvFv6ikuyo.js',
+    '2534e83b47c8bc64737d4d69a2b7f149ee08935f617385b29e78f1964836bcdf' => 'public://js/js_q1EJSX73FXhNKpG7z342lw7tPQ0b6osM42deVZ2HQXI.js',
+    'ccf8f84a3a650a7209e548381e8697a7cc42f138e89ca2ad945bf4508b713c59' => 'public://js/js_DhpKcxB26PYPEBsAjmnWDDKQFk_MqeyTkFawY2FZZeo.js',
+    '3cfccad4c916fb097040a0276f8b598a38e2689fc5674cc5df244885e118961e' => 'public://js/js_YnXIScy1ES9juunuTgOLRpSeOS6Z4KZcPeYOWGaJHaM.js',
+    'f676915739cae3a4a737c500790b8c46f9b2a09c0db68003340b1bfa74b463cf' => 'public://js/js_iFMnZrcwFtGJf7G40XGZ3ZpsQqL61QGydMXKKpT2wnE.js',
+    '1a30c351624a627553d78983ad986922fa2576d2391858497e3ca6bb022b6015' => 'public://js/js_CC-zfeuQHcDhFtVRuKW53h30TL7j_105J32Nz8b8R38.js',
   );
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
@@ -440,7 +446,13 @@ function trip_export_drush_ctex_bonus_variables() {
     ),
   );
 
-  $variables['file_temporary_path'] = '/Applications/MAMP/tmp/php';
+  $variables['file_default_scheme'] = 'public';
+
+  $variables['file_private_path'] = '';
+
+  $variables['file_public_path'] = 'sites/default/files';
+
+  $variables['file_temporary_path'] = '/tmp';
 
   $variables['filter_fallback_format'] = 'plain_text';
 
@@ -509,41 +521,46 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['menu_main_links_source'] = '';
 
   $variables['menu_masks'] = array(
-    0 => 501,
-    1 => 493,
-    2 => 250,
-    3 => 247,
-    4 => 246,
-    5 => 245,
-    6 => 125,
-    7 => 124,
-    8 => 123,
-    9 => 122,
-    10 => 121,
-    11 => 117,
-    12 => 63,
-    13 => 62,
-    14 => 61,
-    15 => 60,
-    16 => 59,
-    17 => 58,
-    18 => 44,
-    19 => 31,
-    20 => 30,
-    21 => 29,
-    22 => 27,
-    23 => 24,
-    24 => 21,
-    25 => 15,
-    26 => 14,
-    27 => 13,
-    28 => 11,
-    29 => 7,
-    30 => 6,
-    31 => 5,
-    32 => 3,
-    33 => 2,
-    34 => 1,
+    0 => 507,
+    1 => 506,
+    2 => 501,
+    3 => 493,
+    4 => 253,
+    5 => 252,
+    6 => 250,
+    7 => 247,
+    8 => 246,
+    9 => 245,
+    10 => 126,
+    11 => 125,
+    12 => 124,
+    13 => 123,
+    14 => 122,
+    15 => 121,
+    16 => 117,
+    17 => 63,
+    18 => 62,
+    19 => 61,
+    20 => 60,
+    21 => 59,
+    22 => 58,
+    23 => 44,
+    24 => 31,
+    25 => 30,
+    26 => 29,
+    27 => 27,
+    28 => 24,
+    29 => 21,
+    30 => 15,
+    31 => 14,
+    32 => 13,
+    33 => 11,
+    34 => 7,
+    35 => 6,
+    36 => 5,
+    37 => 3,
+    38 => 2,
+    39 => 1,
   );
 
   $variables['menu_options_blog'] = array(
@@ -693,15 +710,14 @@ function trip_export_drush_ctex_bonus_variables() {
     'comment_update' => 12,
     'comment_presave' => 13,
     'comment_view' => 14,
-    'comment_delete' => 15,
-    'taxonomy_term_insert' => 16,
-    'taxonomy_term_update' => 17,
-    'taxonomy_term_presave' => 18,
-    'taxonomy_term_delete' => 19,
-    'taxonomy_vocabulary_insert' => 20,
-    'taxonomy_vocabulary_update' => 21,
-    'taxonomy_vocabulary_presave' => 22,
-    'taxonomy_vocabulary_delete' => 23,
+    'taxonomy_term_insert' => 15,
+    'taxonomy_term_update' => 16,
+    'taxonomy_term_presave' => 17,
+    'taxonomy_term_delete' => 18,
+    'taxonomy_vocabulary_insert' => 19,
+    'taxonomy_vocabulary_update' => 20,
+    'taxonomy_vocabulary_presave' => 21,
+    'taxonomy_vocabulary_delete' => 22,
   );
 
   $variables['save_continue_blog'] = 'Save and add fields';
@@ -726,7 +742,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['site_mail'] = 'admin@example.com';
 
-  $variables['site_name'] = 'Site-Install';
+  $variables['site_name'] = 'Trip';
 
   $variables['site_slogan'] = '';
 

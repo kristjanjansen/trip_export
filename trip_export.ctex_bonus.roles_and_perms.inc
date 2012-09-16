@@ -18,6 +18,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'permissions' => array(
       'access comments' => TRUE,
       'access content' => TRUE,
+      'access user profiles' => TRUE,
       'use text format filtered_html' => TRUE,
     ),
   );
@@ -28,6 +29,7 @@ function trip_export_drush_ctex_bonus_roles_and_perms() {
     'permissions' => array(
       'access comments' => TRUE,
       'access content' => TRUE,
+      'access user profiles' => TRUE,
       'use text format filtered_html' => TRUE,
     ),
   );

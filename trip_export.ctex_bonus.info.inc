@@ -15,6 +15,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
   return array(
     'block',
     'comment',
+    'entity',
     'filter',
     'image',
     'locale',
@@ -24,6 +25,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
     'path',
     'taxonomy',
     'text',
+    'user',
     'views'
   );
 }
