@@ -158,21 +158,23 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 1347795199;
+  $variables['cache_flush_cache_block'] = 1347820154;
 
   $variables['cache_flush_cache_field'] = 0;
 
-  $variables['cache_flush_cache_filter'] = 1347785961;
+  $variables['cache_flush_cache_filter'] = 0;
 
   $variables['cache_flush_cache_form'] = 0;
 
-  $variables['cache_flush_cache_image'] = 1347785961;
+  $variables['cache_flush_cache_image'] = 0;
 
   $variables['cache_flush_cache_menu'] = 0;
 
-  $variables['cache_flush_cache_page'] = 1347795199;
+  $variables['cache_flush_cache_page'] = 1347820154;
 
   $variables['cache_flush_cache_path'] = 0;
+
+  $variables['cache_flush_cache_rules'] = 0;
 
   $variables['cache_flush_cache_views'] = 0;
 
@@ -304,38 +306,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['dev_timer'] = 1;
 
-  $variables['drupal_css_cache_files'] = array(
-    '823ba1006db72809515d2221cd02ec1075d7b49b0c07f49307b3a7930bfdd9e4' => 'public://css/css_bJAVDSUOFMSRcDqRburqEteFVmXUUEL-O9dri4PjPAY.css',
-    'cb9f93e666a396bb3eb14c5fd16f7ebd1cdd0067733eb0a2ab1b294b6f14f76f' => 'public://css/css_v3Ftpk-LmXVOPQTfM06CHLGyDALeZyfj6nKEp5TLU9k.css',
-    'e4973164d49af523443d34ea0c3130198420566bc10607294440f407237c1be8' => 'public://css/css_NdVgz6YKifxQUEsW5xls_zI7Pn2F7E5U5Wb29zcu3vo.css',
-    'ad220a642322a1f01153918b420e4cf1151e64b826892dbc0369027d3e77a685' => 'public://css/css_C67caBAEkLpa8dyU8yl1J0FR-j1bwWt2TlICxZsRWOY.css',
-    '58e076ea79ef502f88c1256bc48b23d0d09ccfc145be5d3270e3e15ccc81f9ba' => 'public://css/css_NzMulmiv2A0ffH2mf_H5_LXspusSejcSypeJHpiSVJE.css',
-    '3e4b187792155b0bfa0d9c9890c063c9a1a48e3e63133581159782c01056e77e' => 'public://css/css_1hBUhXKwQs6YzicVPNK6QG73m_k0sJpDynvL-9LqqLg.css',
-    '41f3a74543aea2924ef6f36185448db49a114d1dd0c11bd16d6a5d92609b80d9' => 'public://css/css_dBduBKaJIauxmVE0xGciUtzgq-WU2Ollv2YwUt_f6Qs.css',
-    'd2b3cbbf84b12bac0a0c00116082be94df58ed58cbd78d2dda95bad18c30f8a6' => 'public://css/css_iO254im2kUVNCK0u5rsNXeu4R1pHiJZqfs2ZUzNQW8M.css',
-    'ac8414a71aa2229b63a13be4ec5f505ef3bc7d90f9f80044c9a9b4c5561e0db6' => 'public://css/css_e7QaBXte1R6sX1PIxyItmKgW6KEndExQwAd-Zrf_0yo.css',
-    '9fb13edfd1fa21c59b4238d70e523abf0ef135d6f2a3d13630ae781537c0be53' => 'public://css/css_jZSjWZlpaI2pipwm73-0H-HmH0AXpb_kn8xVua6Hqwk.css',
-    '8542edb163200559d6cf108e2162f991bbe5e1e7a6576f8a75bd4e583c60f4c9' => 'public://css/css_1nchpRexE8DrVhaVDvi_kgwvy_fW82ETNRkZpHnCo_I.css',
-    'aa0d67532971d795e047c3478e7aa90da4ec6a1f3bcaff4552989f7e54acf713' => 'public://css/css_NiuuoB2U12NNge3eYES893671FpDutFthQFomWBGKjI.css',
-  );
-
   $variables['drupal_http_request_fails'] = FALSE;
-
-  $variables['drupal_js_cache_files'] = array(
-    'a571bc4156d0556568d7f04bc93f81c658b2e21fef9bb8229528c077ce9a0ccf' => 'public://js/js_3jHghlMLrjr9xXAC0JufqSSch3oAbkZstSqYdc4uuck.js',
-    'a607b2c9a2d22e25fd27661c305f807fd26f06235363f5419d538cff70adf2e2' => 'public://js/js_x0Gj5aRedtig6jsWsMvunkhds_c4el4X8jpJUuG4iwU.js',
-    '53f34982e0dd4fe33e1b351d5486ee76af300b1381c17c3bca33fa1f57fd400b' => 'public://js/js_9on95PJoK_n1kWSeaKIs9x_Uz29E50uRd9DxOYAAOW8.js',
-    '830103153090a6c0fd186b454039611f61829dd10aab181e7e9ae4e68722be33' => 'public://js/js_n48cF77P9Zf4vk_QuKvskjOQbv8iPgmguHne2odxsH0.js',
-    '8cc2ab3b382880b7e86ae24fc13f9ec92e479b9f1dacf702465095dd5c62148e' => 'public://js/js_yMChZ7D5N_olh8RoGQ02xOt1-vMKfF0Mknd6XNu_1pw.js',
-    '3b2163c604e8f802b9104af70c7f93fd49df2191024a9e342ffd62b448e79d34' => 'public://js/js_9Um4Exvyiu4UHuikOvP4pFniwHmd8CggKIvFv6ikuyo.js',
-    '2534e83b47c8bc64737d4d69a2b7f149ee08935f617385b29e78f1964836bcdf' => 'public://js/js_q1EJSX73FXhNKpG7z342lw7tPQ0b6osM42deVZ2HQXI.js',
-    'ccf8f84a3a650a7209e548381e8697a7cc42f138e89ca2ad945bf4508b713c59' => 'public://js/js_DhpKcxB26PYPEBsAjmnWDDKQFk_MqeyTkFawY2FZZeo.js',
-    '3cfccad4c916fb097040a0276f8b598a38e2689fc5674cc5df244885e118961e' => 'public://js/js_YnXIScy1ES9juunuTgOLRpSeOS6Z4KZcPeYOWGaJHaM.js',
-    'f676915739cae3a4a737c500790b8c46f9b2a09c0db68003340b1bfa74b463cf' => 'public://js/js_iFMnZrcwFtGJf7G40XGZ3ZpsQqL61QGydMXKKpT2wnE.js',
-    '1a30c351624a627553d78983ad986922fa2576d2391858497e3ca6bb022b6015' => 'public://js/js_CC-zfeuQHcDhFtVRuKW53h30TL7j_105J32Nz8b8R38.js',
-    '4e5493631f88be1980db69dd0b3987fa029548e4ddf4d066610142ee8094d18d' => 'public://js/js_A7SRv3YUjjUO1AwrLpOPfg6KcYK9TxIrVQO_ynwK-JY.js',
-    '8c4ecd2a1408fb04b6c3010b8f6380ce9277339302187662165a40ca760cb0cd' => 'public://js/js_UyseuFjrboYJVm-xJCA8_s5Bulx1bEQT6I92HfPWydU.js',
-  );
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
 
@@ -695,9 +666,9 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['page_compression'] = 1;
 
-  $variables['preprocess_css'] = 1;
+  $variables['preprocess_css'] = 0;
 
-  $variables['preprocess_js'] = 1;
+  $variables['preprocess_js'] = 0;
 
   $variables['rules_empty_sets'] = array(
     'node_presave' => 0,
@@ -771,7 +742,7 @@ function trip_export_drush_ctex_bonus_variables() {
     'favicon_upload' => '',
   );
 
-  $variables['update_last_email_notification'] = 1347112949;
+  $variables['update_last_email_notification'] = 1347811277;
 
   $variables['update_notify_emails'] = array(
     0 => 'admin@example.com',

@@ -151,7 +151,9 @@ function trip_export_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'span';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['empty'] = '&nbsp;';
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -248,6 +250,7 @@ function trip_export_views_default_views() {
     t('author'),
     t('.'),
     t(','),
+    t('&nbsp;'),
     t('%1'),
     t('All'),
     t('Page'),
