@@ -132,7 +132,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['boost_lifetime_min_text/xml'] = '0';
 
-  $variables['boost_message_debug'] = 1;
+  $variables['boost_message_debug'] = 0;
 
   $variables['boost_normal_dir'] = 'normal';
 
@@ -156,25 +156,25 @@ function trip_export_drush_ctex_bonus_variables() {
     'cache_rules' => 'cache_rules',
   );
 
-  $variables['cache_flush_cache'] = 1347785961;
+  $variables['cache_flush_cache'] = 0;
 
   $variables['cache_flush_cache_block'] = 0;
 
-  $variables['cache_flush_cache_field'] = 1347785961;
+  $variables['cache_flush_cache_field'] = 0;
 
   $variables['cache_flush_cache_filter'] = 1347785961;
 
-  $variables['cache_flush_cache_form'] = 1347785961;
+  $variables['cache_flush_cache_form'] = 0;
 
   $variables['cache_flush_cache_image'] = 1347785961;
 
-  $variables['cache_flush_cache_menu'] = 1347785961;
+  $variables['cache_flush_cache_menu'] = 0;
 
   $variables['cache_flush_cache_page'] = 1347786123;
 
-  $variables['cache_flush_cache_path'] = 1347785961;
+  $variables['cache_flush_cache_path'] = 0;
 
-  $variables['cache_flush_cache_views'] = 1347785961;
+  $variables['cache_flush_cache_views'] = 0;
 
   $variables['cache_flush_cache_views_data'] = 1347785961;
 
