@@ -158,7 +158,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 1347993002;
+  $variables['cache_flush_cache_block'] = 1347995727;
 
   $variables['cache_flush_cache_field'] = 0;
 
@@ -170,7 +170,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_menu'] = 0;
 
-  $variables['cache_flush_cache_page'] = 1347993002;
+  $variables['cache_flush_cache_page'] = 1347995727;
 
   $variables['cache_flush_cache_path'] = 0;
 
@@ -302,7 +302,37 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['default_nodes_main'] = '10';
 
+  $variables['devel_api_url'] = 'api.drupal.org';
+
+  $variables['devel_error_handlers'] = array(
+    1 => '1',
+  );
+
+  $variables['devel_execution'] = '5';
+
+  $variables['devel_krumo_skin'] = 'default';
+
+  $variables['devel_page_alter'] = 0;
+
   $variables['devel_query_display'] = 1;
+
+  $variables['devel_query_sort'] = '1';
+
+  $variables['devel_raw_names'] = 0;
+
+  $variables['devel_rebuild_theme_registry'] = 0;
+
+  $variables['devel_redirect_page'] = 0;
+
+  $variables['devel_use_uncompressed_jquery'] = 0;
+
+  $variables['devel_xhprof_directory'] = '';
+
+  $variables['devel_xhprof_enabled'] = FALSE;
+
+  $variables['devel_xhprof_url'] = '';
+
+  $variables['dev_mem'] = 1;
 
   $variables['dev_timer'] = 1;
 
@@ -442,7 +472,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 17;
+  $variables['language_count'] = 18;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
