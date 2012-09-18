@@ -108,6 +108,54 @@ function trip_export_drush_ctex_bonus_blocks() {
     'block_role' => array(),
   );
 
+  $blocks['user-login-island'] = (object) array(
+    'module' => 'user',
+    'delta' => 'login',
+    'theme' => 'island',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+    'block_node_type' => array(),
+    'block_role' => array(),
+  );
+
+  $blocks['system-navigation-island'] = (object) array(
+    'module' => 'system',
+    'delta' => 'navigation',
+    'theme' => 'island',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+    'block_node_type' => array(),
+    'block_role' => array(),
+  );
+
+  $blocks['system-management-island'] = (object) array(
+    'module' => 'system',
+    'delta' => 'management',
+    'theme' => 'island',
+    'status' => '1',
+    'weight' => '1',
+    'region' => 'sidebar_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+    'block_node_type' => array(),
+    'block_role' => array(),
+  );
+
   $blocks['system-help-island'] = (object) array(
     'module' => 'system',
     'delta' => 'help',

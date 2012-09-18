@@ -158,7 +158,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 1347820154;
+  $variables['cache_flush_cache_block'] = 1347993002;
 
   $variables['cache_flush_cache_field'] = 0;
 
@@ -170,7 +170,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_menu'] = 0;
 
-  $variables['cache_flush_cache_page'] = 1347820154;
+  $variables['cache_flush_cache_page'] = 1347993002;
 
   $variables['cache_flush_cache_path'] = 0;
 
@@ -442,7 +442,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['image_toolkit'] = 'gd';
 
-  $variables['language_count'] = 16;
+  $variables['language_count'] = 17;
 
   $variables['language_default'] = (object) array(
     'language' => 'et',
