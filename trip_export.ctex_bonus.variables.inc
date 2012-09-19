@@ -30,6 +30,8 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['additional_settings__active_tab_travel_buysell'] = 'edit-submission';
 
+  $variables['admin_theme'] = 'island';
+
   $variables['block_cache'] = 1;
 
   $variables['boost_add_default_charset'] = 1;
@@ -196,7 +198,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_views'] = 0;
 
-  $variables['cache_flush_cache_views_data'] = 1348066517;
+  $variables['cache_flush_cache_views_data'] = 0;
 
   $variables['cache_lifetime'] = '600';
 
@@ -500,7 +502,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['filter_fallback_format'] = 'plain_text';
 
-  $variables['form_build_id'] = 'form-pZ-vguIdQZVjmSN8efq7Q55xI8EydEWdIWeF9Yhe0QY';
+  $variables['form_build_id'] = 'form-VEUa-Qb9HH80sigC5SMhNeg4D7YIKtsEMw8pW1kqt1U';
 
   $variables['imagemagick_convert'] = '/usr/local/bin/convert';
 
@@ -652,6 +654,8 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['menu_parent_travel_buysell'] = 'main-menu:0';
 
   $variables['menu_secondary_links_source'] = '';
+
+  $variables['node_admin_theme'] = 0;
 
   $variables['node_options_blog'] = array(
     0 => 'status',
