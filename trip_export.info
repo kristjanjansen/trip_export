@@ -1,5 +1,6 @@
 name = trip_export export module
 description = Export objects from CTools
+dependencies[] = elysia_cron
 dependencies[] = views
 package = Chaos tool suite
 core = 7.x

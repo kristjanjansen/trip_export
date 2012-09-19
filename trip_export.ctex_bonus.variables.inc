@@ -162,13 +162,13 @@ function trip_export_drush_ctex_bonus_variables() {
     'cache_rules' => 'cache_rules',
   );
 
-  $variables['cache_flush_cache'] = 1348066517;
+  $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 0;
+  $variables['cache_flush_cache_block'] = 1348066908;
 
   $variables['cache_flush_cache_entity_comment'] = 1348066517;
 
-  $variables['cache_flush_cache_entity_file'] = 1348066517;
+  $variables['cache_flush_cache_entity_file'] = 0;
 
   $variables['cache_flush_cache_entity_node'] = 1348066517;
 
@@ -176,25 +176,25 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_entity_taxonomy_vocabulary'] = 0;
 
-  $variables['cache_flush_cache_entity_user'] = 1348066517;
+  $variables['cache_flush_cache_entity_user'] = 0;
 
-  $variables['cache_flush_cache_field'] = 1348066517;
+  $variables['cache_flush_cache_field'] = 0;
 
   $variables['cache_flush_cache_filter'] = 0;
 
-  $variables['cache_flush_cache_form'] = 1348066517;
+  $variables['cache_flush_cache_form'] = 0;
 
   $variables['cache_flush_cache_image'] = 0;
 
-  $variables['cache_flush_cache_menu'] = 1348066517;
+  $variables['cache_flush_cache_menu'] = 0;
 
   $variables['cache_flush_cache_page'] = 1348066517;
 
-  $variables['cache_flush_cache_path'] = 1348066517;
+  $variables['cache_flush_cache_path'] = 0;
 
-  $variables['cache_flush_cache_rules'] = 1348066517;
+  $variables['cache_flush_cache_rules'] = 0;
 
-  $variables['cache_flush_cache_views'] = 1348066517;
+  $variables['cache_flush_cache_views'] = 0;
 
   $variables['cache_flush_cache_views_data'] = 1348066517;
 
@@ -316,6 +316,8 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cron_key'] = 'UvPtKNTJyRwVAcXJrzMeG20udST6s6lAzWbP-ux0770';
 
+  $variables['cron_safe_threshold'] = '10800';
+
   $variables['date_default_timezone'] = 'Europe/Tallinn';
 
   $variables['default_nodes_main'] = '10';
@@ -357,6 +359,24 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['drupal_http_request_fails'] = FALSE;
 
   $variables['drupal_private_key'] = 'UgJEIvLr_hWXUSiTc_8KQ_AJFUQN6GRe0cx67d3xIXw';
+
+  $variables['elysia_cron_alert_interval'] = '60';
+
+  $variables['elysia_cron_default_rules'] = array(
+    '*/15 * * * *' => 'Every 15 minutes',
+    '*/30 * * * *' => 'Every 30 minutes',
+    '0 * * * *' => 'Every hour',
+    '0 */6 * * *' => 'Every 6 hours',
+    '4 0 * * *' => 'Once a day',
+    '4 0 * * 0' => 'Once a week',
+    '4 0 1 * *' => 'Once a month',
+  );
+
+  $variables['elysia_cron_stuck_time'] = '3600';
+
+  $variables['elysia_cron_time_limit'] = '240';
+
+  $variables['elysia_cron_version'] = 20111020;
 
   $variables['entitycache_enabled'] = TRUE;
 
@@ -479,6 +499,8 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['file_temporary_path'] = '/tmp';
 
   $variables['filter_fallback_format'] = 'plain_text';
+
+  $variables['form_build_id'] = 'form-pZ-vguIdQZVjmSN8efq7Q55xI8EydEWdIWeF9Yhe0QY';
 
   $variables['imagemagick_convert'] = '/usr/local/bin/convert';
 

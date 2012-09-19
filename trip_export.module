@@ -15,6 +15,15 @@ function trip_export_views_api($module, $api) {
 }
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function trip_export_ctools_plugin_api($module, $api) {
+  if ($module == 'elysia_cron' && $api == 'default_elysia_cron_rules') {
+    return array('version' => 1);
+  }
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function trip_export_image_default_styles() {

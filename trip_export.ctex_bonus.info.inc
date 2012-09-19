@@ -15,6 +15,7 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
   return array(
     'block',
     'comment',
+    'elysia_cron',
     'entity',
     'filter',
     'image',
@@ -35,6 +36,9 @@ function trip_export_drush_ctex_bonus_info_dependencies() {
  */
 function trip_export_drush_ctex_bonus_info_files() {
   return array(
+    'trip_export.default_elysia_cron_rules.inc' => array(
+      'overwrite' => TRUE,
+    ),
     'trip_export.views_default.inc' => array(
       'overwrite' => TRUE,
     ),
