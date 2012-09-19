@@ -166,15 +166,15 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache'] = 0;
 
-  $variables['cache_flush_cache_block'] = 1348066908;
+  $variables['cache_flush_cache_block'] = 1348071428;
 
-  $variables['cache_flush_cache_entity_comment'] = 1348066517;
+  $variables['cache_flush_cache_entity_comment'] = 0;
 
   $variables['cache_flush_cache_entity_file'] = 0;
 
-  $variables['cache_flush_cache_entity_node'] = 1348066517;
+  $variables['cache_flush_cache_entity_node'] = 0;
 
-  $variables['cache_flush_cache_entity_taxonomy_term'] = 1348066517;
+  $variables['cache_flush_cache_entity_taxonomy_term'] = 0;
 
   $variables['cache_flush_cache_entity_taxonomy_vocabulary'] = 0;
 
@@ -190,7 +190,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['cache_flush_cache_menu'] = 0;
 
-  $variables['cache_flush_cache_page'] = 1348066517;
+  $variables['cache_flush_cache_page'] = 1348071428;
 
   $variables['cache_flush_cache_path'] = 0;
 
