@@ -142,13 +142,19 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['boost_ssl_bypass'] = 1;
 
-  $variables['cache'] = 1;
+  $variables['cache'] = 0;
 
   $variables['cache_actions_get_cache_bins'] = array(
     'cache' => 'cache',
     'cache_block' => 'cache_block',
     'cache_filter' => 'cache_filter',
     'cache_page' => 'cache_page',
+    'cache_entity_comment' => 'cache_entity_comment',
+    'cache_entity_file' => 'cache_entity_file',
+    'cache_entity_node' => 'cache_entity_node',
+    'cache_entity_taxonomy_term' => 'cache_entity_taxonomy_term',
+    'cache_entity_taxonomy_vocabulary' => 'cache_entity_taxonomy_vocabulary',
+    'cache_entity_user' => 'cache_entity_user',
     'cache_field' => 'cache_field',
     'cache_image' => 'cache_image',
     'cache_views' => 'cache_views',
@@ -156,29 +162,41 @@ function trip_export_drush_ctex_bonus_variables() {
     'cache_rules' => 'cache_rules',
   );
 
-  $variables['cache_flush_cache'] = 0;
+  $variables['cache_flush_cache'] = 1348066517;
 
-  $variables['cache_flush_cache_block'] = 1347995727;
+  $variables['cache_flush_cache_block'] = 0;
 
-  $variables['cache_flush_cache_field'] = 0;
+  $variables['cache_flush_cache_entity_comment'] = 1348066517;
+
+  $variables['cache_flush_cache_entity_file'] = 1348066517;
+
+  $variables['cache_flush_cache_entity_node'] = 1348066517;
+
+  $variables['cache_flush_cache_entity_taxonomy_term'] = 1348066517;
+
+  $variables['cache_flush_cache_entity_taxonomy_vocabulary'] = 0;
+
+  $variables['cache_flush_cache_entity_user'] = 1348066517;
+
+  $variables['cache_flush_cache_field'] = 1348066517;
 
   $variables['cache_flush_cache_filter'] = 0;
 
-  $variables['cache_flush_cache_form'] = 0;
+  $variables['cache_flush_cache_form'] = 1348066517;
 
   $variables['cache_flush_cache_image'] = 0;
 
-  $variables['cache_flush_cache_menu'] = 0;
+  $variables['cache_flush_cache_menu'] = 1348066517;
 
-  $variables['cache_flush_cache_page'] = 1347995727;
+  $variables['cache_flush_cache_page'] = 1348066517;
 
-  $variables['cache_flush_cache_path'] = 0;
+  $variables['cache_flush_cache_path'] = 1348066517;
 
-  $variables['cache_flush_cache_rules'] = 0;
+  $variables['cache_flush_cache_rules'] = 1348066517;
 
-  $variables['cache_flush_cache_views'] = 0;
+  $variables['cache_flush_cache_views'] = 1348066517;
 
-  $variables['cache_flush_cache_views_data'] = 0;
+  $variables['cache_flush_cache_views_data'] = 1348066517;
 
   $variables['cache_lifetime'] = '600';
 
@@ -332,7 +350,7 @@ function trip_export_drush_ctex_bonus_variables() {
 
   $variables['devel_xhprof_url'] = '';
 
-  $variables['dev_mem'] = 1;
+  $variables['dev_mem'] = 0;
 
   $variables['dev_timer'] = 1;
 
@@ -737,6 +755,16 @@ function trip_export_drush_ctex_bonus_variables() {
   $variables['save_continue_news'] = 'Save and add fields';
 
   $variables['save_continue_travel_buysell'] = 'Save and add fields';
+
+  $variables['scriptjs_disable_admin'] = 1;
+
+  $variables['scriptjs_embed'] = 1;
+
+  $variables['scriptjs_enable'] = 1;
+
+  $variables['scriptjs_exclude'] = '';
+
+  $variables['scriptjs_min'] = 1;
 
   $variables['site_403'] = '';
 
